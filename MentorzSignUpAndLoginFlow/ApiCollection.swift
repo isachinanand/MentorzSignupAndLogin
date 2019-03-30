@@ -55,15 +55,15 @@ extension ApiCollection:TargetType {
     }
     
     var task: Task {
-        switch self {
+        switch  self {
         
+        case .registerViaPhoneNumber(let withUser):
+            <#code#>
         case .loginViaPhoneNumber(let forRequest):
             <#code#>
         case .socialRegister(let withUser):
             <#code#>
         case .socialLogin(let withRequest):
-            <#code#>
-        case .registerViaPhoneNumber(let withUser):
             <#code#>
         }
     }

@@ -18,6 +18,7 @@
 		A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AC4224F374900A444EC /* PhoneNumber.swift */; };
 		A39B4AC7224F3A2300A444EC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AC6224F3A2300A444EC /* UserManager.swift */; };
 		A39B4AC9224F3B7700A444EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AC8224F3B7700A444EC /* User.swift */; };
+		A39B4ACB224F595B00A444EC /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4ACA224F595B00A444EC /* RegistrationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A39B4AC4224F374900A444EC /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		A39B4AC6224F3A2300A444EC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A39B4AC8224F3B7700A444EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A39B4ACA224F595B00A444EC /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
 		A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; sourceTree = "<group>"; };
 		B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzSignUpAndLoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				A39B4AC4224F374900A444EC /* PhoneNumber.swift */,
 				A39B4AC6224F3A2300A444EC /* UserManager.swift */,
 				A39B4AC8224F3B7700A444EC /* User.swift */,
+				A39B4ACA224F595B00A444EC /* RegistrationManager.swift */,
 			);
 			path = MentorzSignUpAndLoginFlow;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				A39B4AC7224F3A2300A444EC /* UserManager.swift in Sources */,
 				A39B4AC3224F337400A444EC /* ApiCollection.swift in Sources */,
+				A39B4ACB224F595B00A444EC /* RegistrationManager.swift in Sources */,
 				A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */,
 				A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,

@@ -11,8 +11,7 @@ open class PhoneNumber {
     public var cc:String?
     public var phoneNumber:String?
     var iso_name:String?
-    convenience public init(_ cc:String,_ phoneNumber:String, _ iso:String) {
-        self.init()
+    init(_ cc:String,_ phoneNumber:String, _ iso:String) {
         self.iso_name = iso
         self.cc = cc
         self.phoneNumber = phoneNumber
