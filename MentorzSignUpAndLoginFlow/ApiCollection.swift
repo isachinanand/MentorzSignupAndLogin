@@ -55,11 +55,35 @@ extension ApiCollection:TargetType {
     }
     
     var task: Task {
-        <#code#>
+        switch self {
+        
+        case .loginViaPhoneNumber(let forRequest):
+            <#code#>
+        case .socialRegister(let withUser):
+            <#code#>
+        case .socialLogin(let withRequest):
+            <#code#>
+        case .registerViaPhoneNumber(let withUser):
+            <#code#>
+        }
     }
     
     var headers: [String : String]? {
-        <#code#>
+        switch self {
+        case .registerViaPhoneNumber(withUser: _),.socialRegister(withUser: _):
+            return [
+                "Accept":"application/json",
+                "Content-Type": "application/json",
+                "User-Agent":""
+                
+            ]
+        case .loginViaPhoneNumber(forRequest: _),.socialLogin(withRequest: _):
+            return [
+                "Accept":"application/json",
+                "Content-Type": "application/json",
+                "User-Agent":""
+            ]
+        }
     }
     
     

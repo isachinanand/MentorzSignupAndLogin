@@ -11,4 +11,6 @@ class User {
     private var phoneNumber: PhoneNumber?
     private var password: String?
     private var name: String?
+    private var dateOfBirth: Date?
+    private var basicInfo: String?
 }
