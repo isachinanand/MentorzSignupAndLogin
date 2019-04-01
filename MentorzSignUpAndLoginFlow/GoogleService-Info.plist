@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>649888555897-3nu0d5tpmmmsv0jo9kbpo27k58kd9u8c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.649888555897-3nu0d5tpmmmsv0jo9kbpo27k58kd9u8c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAllNSI4OthDaqmRxGpYH4Uk2ruLAulHAw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>649888555897</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.craterzone.mentorzSignupLogin</string>
+	<key>PROJECT_ID</key>
+	<string>mentorzsignupandloginflo-8ef35</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mentorzsignupandloginflo-8ef35.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:649888555897:ios:8b362e1cd51fb306</string>
+	<key>DATABASE_URL</key>
+	<string>https://mentorzsignupandloginflo-8ef35.firebaseio.com</string>
+</dict>
+</plist>

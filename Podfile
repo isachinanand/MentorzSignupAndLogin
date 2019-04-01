@@ -8,5 +8,6 @@ target 'MentorzSignUpAndLoginFlow' do
   # Pods for MentorzSignUpAndLoginFlow
 pod 'Moya'
 pod 'ObjectMapper', '~> 3.4'
-
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
 end

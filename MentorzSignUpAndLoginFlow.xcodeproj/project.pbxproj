@@ -25,6 +25,8 @@
 		A39B4AD5225215BC00A444EC /* LoginWithUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AD4225215BC00A444EC /* LoginWithUserResponse.swift */; };
 		A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AD62252166D00A444EC /* UserProfileLoginResponse.swift */; };
 		A39B4AE122522A1E00A444EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE022522A1E00A444EC /* User.swift */; };
+		A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */; };
+		A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		A39B4AD4225215BC00A444EC /* LoginWithUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithUserResponse.swift; sourceTree = "<group>"; };
 		A39B4AD62252166D00A444EC /* UserProfileLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileLoginResponse.swift; sourceTree = "<group>"; };
 		A39B4AE022522A1E00A444EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A39B4AE4225283FF00A444EC /* MentorzSignUpAndLoginFlow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MentorzSignUpAndLoginFlow.entitlements; sourceTree = "<group>"; };
+		A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerification.swift; sourceTree = "<group>"; };
+		A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; sourceTree = "<group>"; };
 		B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzSignUpAndLoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,6 +98,7 @@
 		A39B4AAC224F331B00A444EC /* MentorzSignUpAndLoginFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A39B4AE4225283FF00A444EC /* MentorzSignUpAndLoginFlow.entitlements */,
 				A39B4ADF22522A1600A444EC /* Models */,
 				A39B4ADC2252187A00A444EC /* Login */,
 				A39B4ADA225217BD00A444EC /* RegisterWithPhoneNumber */,
@@ -102,6 +108,7 @@
 				A39B4AB7224F331E00A444EC /* Assets.xcassets */,
 				A39B4AB9224F331E00A444EC /* LaunchScreen.storyboard */,
 				A39B4ABC224F331E00A444EC /* Info.plist */,
+				A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */,
 				A39B4AB4224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld */,
 				A39B4AC2224F337400A444EC /* ApiCollection.swift */,
 				A39B4AC6224F3A2300A444EC /* UserManager.swift */,
@@ -117,6 +124,7 @@
 				A39B4AC8224F3B7700A444EC /* UserProfile.swift */,
 				A39B4ACA224F595B00A444EC /* RegistrationManager.swift */,
 				A39B4AD02251EBC000A444EC /* DeviceInfo.swift */,
+				A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */,
 			);
 			path = RegisterWithPhoneNumber;
 			sourceTree = "<group>";
@@ -182,6 +190,11 @@
 				TargetAttributes = {
 					A39B4AA9224F331B00A444EC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -209,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39B4ABB224F331E00A444EC /* LaunchScreen.storyboard in Resources */,
+				A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */,
 				A39B4AB8224F331E00A444EC /* Assets.xcassets in Resources */,
 				A39B4AB3224F331B00A444EC /* Main.storyboard in Resources */,
 			);
@@ -249,18 +263,24 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -283,6 +303,7 @@
 				A39B4AE122522A1E00A444EC /* User.swift in Sources */,
 				A39B4AD12251EBC000A444EC /* DeviceInfo.swift in Sources */,
 				A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */,
+				A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */,
 				A39B4ACD2251D3D300A444EC /* LoginManager.swift in Sources */,
 				A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
@@ -434,6 +455,7 @@
 			baseConfigurationReference = 83B65CE8546E7F7AB275A6CD /* Pods-MentorzSignUpAndLoginFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5M96MHLR7;
 				INFOPLIST_FILE = MentorzSignUpAndLoginFlow/Info.plist;
@@ -441,7 +463,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.testApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.mentorzSignupLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,6 +475,7 @@
 			baseConfigurationReference = A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5M96MHLR7;
 				INFOPLIST_FILE = MentorzSignUpAndLoginFlow/Info.plist;
@@ -460,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.testApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.mentorzSignupLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
