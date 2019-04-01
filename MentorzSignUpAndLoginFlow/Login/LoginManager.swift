@@ -10,13 +10,12 @@ import Foundation
 import Moya
 class LoginManager: NSObject {
     let loginProvider = MoyaProvider<ApiCollection>()
-    func loginUserWithPhone(user:LoginRequest,handler: @escaping ((Int,LoginRequest?)->(Void))) {
+    func loginUserWithPhone(user:LoginRequest,handler: @escaping ((Int,LoginWithUserResponse?)->(Void))) {
         loginProvider.request(.loginViaPhoneNumber(forRequest:user)) {(response) in
             switch response{
             case .success(let result):
                 let responseString = String(data: result.data, encoding:String.Encoding.ascii) ?? ""
-                handler(result.statusCode,                 LoginRequest(JSONString: responseString))
-                let user = LoginWithUserResponse(map: )
+                handler(result.statusCode,LoginWithUserResponse(JSONString: responseString))
                 
             case .failure(let error):
                 print("bad :(")
