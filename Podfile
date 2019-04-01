@@ -7,5 +7,6 @@ target 'MentorzSignUpAndLoginFlow' do
 
   # Pods for MentorzSignUpAndLoginFlow
 pod 'Moya'
+pod 'ObjectMapper', '~> 3.4'
 
 end

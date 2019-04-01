@@ -7,10 +7,22 @@
 //
 
 import UIKit
-
+import Moya
 class UserManager: NSObject {
     public  static var shared = UserManager()
-    public var user:User?
+    
+    func registerUserWithPhoneNumber(user:LoginRequest){
+    
+    }
+    func registerUserWithSocial(user:LoginRequest){
+        
+    }
+    func loginUserWithPhone(user:LoginRequest){
+        
+    }
+    func loginUserWithSocial(user:LoginRequest){
+        
+    }
     
 
 }
