@@ -19,6 +19,8 @@ class UserProfile: NSObject, Mappable{
     var hresId : String?
     var lresId : String?
     var videoBioLres : String?
+   
+   
     required init?(map: Map){}
     func mapping(map: Map)
     {

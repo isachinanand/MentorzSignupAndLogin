@@ -22,7 +22,7 @@ class LoginWithUserResponse : NSObject,Mappable{
     var name : String?
     var phoneNumber : PhoneNumber?
     var userId : Int?
-    var userProfile : UserProfile?
+    var userProfile : UserProfileLoginResponse?
     
     
     

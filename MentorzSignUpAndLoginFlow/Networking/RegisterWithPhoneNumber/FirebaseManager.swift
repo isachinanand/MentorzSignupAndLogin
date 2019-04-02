@@ -20,7 +20,6 @@ class FireBaseManager {
             // ...
         
     
-    UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
     self.verificationId = UserDefaults.standard.string(forKey: "authVerificationID") ?? ""
 }
 }

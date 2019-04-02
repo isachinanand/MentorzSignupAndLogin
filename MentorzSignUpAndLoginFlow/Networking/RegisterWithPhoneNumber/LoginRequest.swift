@@ -15,6 +15,8 @@ class LoginRequest: NSObject, Mappable{
     var userProfile : UserProfile?
     var socialId : String?
     var socialSource : String?
+    var code : String?
+
     
     override public init() {
         super.init()
@@ -34,5 +36,6 @@ class LoginRequest: NSObject, Mappable{
         email_id <- map["email_id"]
         socialId <- map["social_id"]
         socialSource <- map["social_source"]
+        code <- map["code"]
     }
 }

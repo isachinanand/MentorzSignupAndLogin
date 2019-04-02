@@ -18,23 +18,19 @@ class LoginManager: NSObject {
                 handler(result.statusCode,LoginWithUserResponse(JSONString: responseString))
                 
             case .failure(let error):
-                print("bad :(")
-                
                 handler(error.response?.statusCode ?? -1000, nil)
             }
             
         }
     }
-    func loginUserWithSocial(user:LoginRequest,handler: @escaping ((Int)->(Void))) {
+    func loginUserWithSocial(user:LoginRequest,handler: @escaping ((Int,LoginWithUserResponse?)->(Void))) {
         loginProvider.request(.socialLogin(withRequest:user)) {(response) in
             switch response{
             case .success(let result):
-                print("good :p")
-                handler(result.statusCode)
+                let responseString = String(data: result.data, encoding:String.Encoding.ascii) ?? ""
+                handler(result.statusCode,LoginWithUserResponse(JSONString: responseString))
             case .failure(let error):
-                print("bad :(")
-                
-                handler(error.response?.statusCode ?? -1000)
+                handler(error.response?.statusCode ?? -1000,nil)
             }
             
         }

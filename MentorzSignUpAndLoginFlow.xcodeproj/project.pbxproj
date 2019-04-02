@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67E87BF69DDF3416B429833E /* Pods_MentorzSignUpAndLoginFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */; };
+		A30D61AF225335B700064CED /* UserAccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61AE225335B700064CED /* UserAccountAPI.swift */; };
+		A30D61B12253404200064CED /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61B02253404200064CED /* ChangePassword.swift */; };
 		A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAD224F331B00A444EC /* AppDelegate.swift */; };
 		A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAF224F331B00A444EC /* ViewController.swift */; };
 		A39B4AB3224F331B00A444EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AB1224F331B00A444EC /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		83B65CE8546E7F7AB275A6CD /* Pods-MentorzSignUpAndLoginFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		A30D61AE225335B700064CED /* UserAccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountAPI.swift; sourceTree = "<group>"; };
+		A30D61B02253404200064CED /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		A39B4AAA224F331B00A444EC /* MentorzSignUpAndLoginFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorzSignUpAndLoginFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39B4AAD224F331B00A444EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39B4AAF224F331B00A444EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A30D61B2225368A800064CED /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4ADC2252187A00A444EC /* Login */,
+				A39B4ADA225217BD00A444EC /* RegisterWithPhoneNumber */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A30D61B3225368EE00064CED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4AE4225283FF00A444EC /* MentorzSignUpAndLoginFlow.entitlements */,
+				A39B4AAD224F331B00A444EC /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		A39B4AA1224F331B00A444EC = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +122,9 @@
 		A39B4AAC224F331B00A444EC /* MentorzSignUpAndLoginFlow */ = {
 			isa = PBXGroup;
 			children = (
-				A39B4AE4225283FF00A444EC /* MentorzSignUpAndLoginFlow.entitlements */,
+				A30D61B3225368EE00064CED /* Application */,
+				A30D61B2225368A800064CED /* Networking */,
 				A39B4ADF22522A1600A444EC /* Models */,
-				A39B4ADC2252187A00A444EC /* Login */,
-				A39B4ADA225217BD00A444EC /* RegisterWithPhoneNumber */,
-				A39B4AAD224F331B00A444EC /* AppDelegate.swift */,
 				A39B4AAF224F331B00A444EC /* ViewController.swift */,
 				A39B4AB1224F331B00A444EC /* Main.storyboard */,
 				A39B4AB7224F331E00A444EC /* Assets.xcassets */,
@@ -114,6 +134,7 @@
 				A39B4AB4224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld */,
 				A39B4AC2224F337400A444EC /* ApiCollection.swift */,
 				A39B4AC6224F3A2300A444EC /* UserManager.swift */,
+				A30D61AE225335B700064CED /* UserAccountAPI.swift */,
 			);
 			path = MentorzSignUpAndLoginFlow;
 			sourceTree = "<group>";
@@ -138,6 +159,7 @@
 				A39B4AD4225215BC00A444EC /* LoginWithUserResponse.swift */,
 				A39B4AD62252166D00A444EC /* UserProfileLoginResponse.swift */,
 				A39B4ACC2251D3D300A444EC /* LoginManager.swift */,
+				A30D61B02253404200064CED /* ChangePassword.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -307,7 +329,9 @@
 				A39B4AD12251EBC000A444EC /* DeviceInfo.swift in Sources */,
 				A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */,
 				A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */,
+				A30D61B12253404200064CED /* ChangePassword.swift in Sources */,
 				A39B4ACD2251D3D300A444EC /* LoginManager.swift in Sources */,
+				A30D61AF225335B700064CED /* UserAccountAPI.swift in Sources */,
 				A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */,
 				A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
