@@ -22,10 +22,14 @@ class ViewController: UIViewController {
         req.password = "qwerty"
         req.deviceInfo = DeviceInfo(deviceToken: "123456789", deviceType: "ios")
         req.email_id = ""
-        LoginManager().loginUserWithPhone(user: req) { (statusCode,user) -> (Void) in
-            print(user)
-            print("dsa")
+        UserManager.shared.loginUser(request: req) { (statuscode, newuser) -> (Void) in
+            print(newuser)
+            print("qwertyuio")
         }
+        //LoginManager().loginUserWithPhone(user: req) { (statusCode,user) -> (Void) in
+         //   print(user)
+         //   print("dsa")
+      //  }
     }
 
 

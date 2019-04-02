@@ -25,22 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MentorzSignUpAndLoginFlow/ViewController.swift"
-            timestampString = "575880554.6653579"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/Login/LoginManager.swift"
             timestampString = "575880554.6654691"
             startingColumnNumber = "9223372036854775807"
@@ -65,86 +49,6 @@
             endingLineNumber = "14"
             landmarkName = "loginUserWithPhone(user:handler:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MentorzSignUpAndLoginFlow.LoginManager.loginUserWithPhone(user: MentorzSignUpAndLoginFlow.LoginRequest, handler: (Swift.Int, Swift.Optional&lt;MentorzSignUpAndLoginFlow.LoginWithUserResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Login/LoginManager.swift"
-                  timestampString = "575818085.250564"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Result.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in MentorzSignUpAndLoginFlow.LoginManager.loginUserWithPhone(user: MentorzSignUpAndLoginFlow.LoginRequest, handler: (Swift.Int, Swift.Optional&lt;MentorzSignUpAndLoginFlow.LoginWithUserResponse&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Login/LoginManager.swift"
-                  timestampString = "575818085.254789"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "89">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MentorzSignUpAndLoginFlow/ViewController.swift"
-            timestampString = "575880554.665624"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MentorzSignUpAndLoginFlow.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/ViewController.swift"
-                  timestampString = "575818085.265879"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "645">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int, Swift.Optional&lt;MentorzSignUpAndLoginFlow.LoginWithUserResponse&gt;) -&gt; () in MentorzSignUpAndLoginFlow.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/ViewController.swift"
-                  timestampString = "575818085.269558"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -166,17 +70,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/UserManager.swift"
+            timestampString = "575900197.163666"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loginUser(request:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/ViewController.swift"
-            timestampString = "575880554.665756"
+            timestampString = "575900197.163859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
+            timestampString = "575900197.163932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "verifyPhone(phoneNumber:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
+            timestampString = "575900197.163998"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "verifyPhone(phoneNumber:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MentorzSignUpAndLoginFlow.FireBaseManager.verifyPhone(phoneNumber: MentorzSignUpAndLoginFlow.PhoneNumber) -&gt; ()"
+                  moduleName = "MentorzSignUpAndLoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
+                  timestampString = "575900197.439286"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MentorzSignUpAndLoginFlow.FireBaseManager.verifyPhone(phoneNumber: MentorzSignUpAndLoginFlow.PhoneNumber) -&gt; ()"
+                  moduleName = "MentorzSignUpAndLoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
+                  timestampString = "575900197.4426709"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

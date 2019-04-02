@@ -43,7 +43,7 @@ class PhoneNumber : NSObject, Mappable{
         
     }
     func getPhoneNumberInString ()->String {
-        return "\(String(describing: cc))"+"\(String(describing: number))"
+        return "+\(cc ?? "")"+"\( number ?? "")"
     }
     
 }
