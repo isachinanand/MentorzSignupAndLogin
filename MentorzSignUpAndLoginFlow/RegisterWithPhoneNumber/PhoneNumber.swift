@@ -42,6 +42,9 @@ class PhoneNumber : NSObject, Mappable{
         number <- map["number"]
         
     }
+    func getPhoneNumberInString ()->String {
+        return "\(String(describing: cc))"+"\(String(describing: number))"
+    }
     
 }
 

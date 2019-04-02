@@ -27,6 +27,7 @@
 		A39B4AE122522A1E00A444EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE022522A1E00A444EC /* User.swift */; };
 		A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */; };
 		A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */; };
+		A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AED2252900F00A444EC /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A39B4AE4225283FF00A444EC /* MentorzSignUpAndLoginFlow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MentorzSignUpAndLoginFlow.entitlements; sourceTree = "<group>"; };
 		A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerification.swift; sourceTree = "<group>"; };
 		A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A39B4AED2252900F00A444EC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; sourceTree = "<group>"; };
 		B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzSignUpAndLoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 				A39B4ACA224F595B00A444EC /* RegistrationManager.swift */,
 				A39B4AD02251EBC000A444EC /* DeviceInfo.swift */,
 				A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */,
+				A39B4AED2252900F00A444EC /* FirebaseManager.swift */,
 			);
 			path = RegisterWithPhoneNumber;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */,
 				A39B4ACD2251D3D300A444EC /* LoginManager.swift in Sources */,
 				A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */,
+				A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
 				A39B4AB6224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld in Sources */,
 				A39B4AC9224F3B7700A444EC /* UserProfile.swift in Sources */,
