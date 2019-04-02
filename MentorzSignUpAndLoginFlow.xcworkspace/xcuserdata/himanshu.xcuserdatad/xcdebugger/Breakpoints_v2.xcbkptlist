@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/ViewController.swift"
-            timestampString = "575900197.163859"
+            timestampString = "575902824.129249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -129,38 +129,6 @@
             endingLineNumber = "14"
             landmarkName = "verifyPhone(phoneNumber:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MentorzSignUpAndLoginFlow.FireBaseManager.verifyPhone(phoneNumber: MentorzSignUpAndLoginFlow.PhoneNumber) -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
-                  timestampString = "575900197.439286"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MentorzSignUpAndLoginFlow.FireBaseManager.verifyPhone(phoneNumber: MentorzSignUpAndLoginFlow.PhoneNumber) -&gt; ()"
-                  moduleName = "MentorzSignUpAndLoginFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/RegisterWithPhoneNumber/FirebaseManager.swift"
-                  timestampString = "575900197.4426709"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "53">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

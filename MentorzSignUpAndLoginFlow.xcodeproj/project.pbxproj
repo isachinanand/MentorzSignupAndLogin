@@ -10,11 +10,11 @@
 		67E87BF69DDF3416B429833E /* Pods_MentorzSignUpAndLoginFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */; };
 		A30D61AF225335B700064CED /* UserAccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61AE225335B700064CED /* UserAccountAPI.swift */; };
 		A30D61B12253404200064CED /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61B02253404200064CED /* ChangePassword.swift */; };
+		A30D61EB2253DCE200064CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30D61EA2253DCE200064CED /* Assets.xcassets */; };
 		A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAD224F331B00A444EC /* AppDelegate.swift */; };
 		A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAF224F331B00A444EC /* ViewController.swift */; };
 		A39B4AB3224F331B00A444EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AB1224F331B00A444EC /* Main.storyboard */; };
 		A39B4AB6224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AB4224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld */; };
-		A39B4AB8224F331E00A444EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AB7224F331E00A444EC /* Assets.xcassets */; };
 		A39B4ABB224F331E00A444EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AB9224F331E00A444EC /* LaunchScreen.storyboard */; };
 		A39B4AC3224F337400A444EC /* ApiCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AC2224F337400A444EC /* ApiCollection.swift */; };
 		A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AC4224F374900A444EC /* PhoneNumber.swift */; };
@@ -36,12 +36,12 @@
 		83B65CE8546E7F7AB275A6CD /* Pods-MentorzSignUpAndLoginFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.debug.xcconfig"; sourceTree = "<group>"; };
 		A30D61AE225335B700064CED /* UserAccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountAPI.swift; sourceTree = "<group>"; };
 		A30D61B02253404200064CED /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		A30D61EA2253DCE200064CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39B4AAA224F331B00A444EC /* MentorzSignUpAndLoginFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorzSignUpAndLoginFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39B4AAD224F331B00A444EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39B4AAF224F331B00A444EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A39B4AB2224F331B00A444EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A39B4AB5224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MentorzSignUpAndLoginFlow.xcdatamodel; sourceTree = "<group>"; };
-		A39B4AB7224F331E00A444EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39B4ABA224F331E00A444EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39B4ABC224F331E00A444EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39B4AC2224F337400A444EC /* ApiCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCollection.swift; sourceTree = "<group>"; };
@@ -86,8 +86,9 @@
 		A30D61B2225368A800064CED /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A30D61B522538B3F00064CED /* APIs */,
 				A39B4ADC2252187A00A444EC /* Login */,
-				A39B4ADA225217BD00A444EC /* RegisterWithPhoneNumber */,
+				A39B4ADA225217BD00A444EC /* Register */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -99,6 +100,49 @@
 				A39B4AAD224F331B00A444EC /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		A30D61B422538B1800064CED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4AED2252900F00A444EC /* FirebaseManager.swift */,
+				A39B4AC6224F3A2300A444EC /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A30D61B522538B3F00064CED /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				A30D61AE225335B700064CED /* UserAccountAPI.swift */,
+				A39B4AC2224F337400A444EC /* ApiCollection.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		A30D61B622538BE000064CED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A30D61EA2253DCE200064CED /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A30D61B722538C0000064CED /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4AB4224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		A30D61B822538C4500064CED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A39B4AB1224F331B00A444EC /* Main.storyboard */,
+				A39B4AB9224F331E00A444EC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A39B4AA1224F331B00A444EC = {
@@ -122,24 +166,21 @@
 		A39B4AAC224F331B00A444EC /* MentorzSignUpAndLoginFlow */ = {
 			isa = PBXGroup;
 			children = (
+				A30D61B722538C0000064CED /* Core Data */,
+				A30D61B622538BE000064CED /* Resources */,
+				A30D61B422538B1800064CED /* Managers */,
 				A30D61B3225368EE00064CED /* Application */,
 				A30D61B2225368A800064CED /* Networking */,
 				A39B4ADF22522A1600A444EC /* Models */,
 				A39B4AAF224F331B00A444EC /* ViewController.swift */,
-				A39B4AB1224F331B00A444EC /* Main.storyboard */,
-				A39B4AB7224F331E00A444EC /* Assets.xcassets */,
-				A39B4AB9224F331E00A444EC /* LaunchScreen.storyboard */,
+				A30D61B822538C4500064CED /* Views */,
 				A39B4ABC224F331E00A444EC /* Info.plist */,
 				A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */,
-				A39B4AB4224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld */,
-				A39B4AC2224F337400A444EC /* ApiCollection.swift */,
-				A39B4AC6224F3A2300A444EC /* UserManager.swift */,
-				A30D61AE225335B700064CED /* UserAccountAPI.swift */,
 			);
 			path = MentorzSignUpAndLoginFlow;
 			sourceTree = "<group>";
 		};
-		A39B4ADA225217BD00A444EC /* RegisterWithPhoneNumber */ = {
+		A39B4ADA225217BD00A444EC /* Register */ = {
 			isa = PBXGroup;
 			children = (
 				A39B4AD22251ECA800A444EC /* LoginRequest.swift */,
@@ -148,9 +189,8 @@
 				A39B4ACA224F595B00A444EC /* RegistrationManager.swift */,
 				A39B4AD02251EBC000A444EC /* DeviceInfo.swift */,
 				A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */,
-				A39B4AED2252900F00A444EC /* FirebaseManager.swift */,
 			);
-			path = RegisterWithPhoneNumber;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		A39B4ADC2252187A00A444EC /* Login */ = {
@@ -248,7 +288,7 @@
 			files = (
 				A39B4ABB224F331E00A444EC /* LaunchScreen.storyboard in Resources */,
 				A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */,
-				A39B4AB8224F331E00A444EC /* Assets.xcassets in Resources */,
+				A30D61EB2253DCE200064CED /* Assets.xcassets in Resources */,
 				A39B4AB3224F331B00A444EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
