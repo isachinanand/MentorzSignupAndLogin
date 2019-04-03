@@ -1,0 +1,979 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<countries>
+    <country
+        name='Abkhazia'
+        code='ge'
+        phoneCode='840' />
+    <country
+        name='Afghanistan'
+        code='af'
+        phoneCode='93' />
+    <country
+        name='Aland'
+        code='ax'
+        phoneCode='358' />
+    <country
+        name='Albania'
+        code='al'
+        phoneCode='355' />
+    <country
+        name='Algeria'
+        code='dz'
+        phoneCode='213' />
+    <country
+        name='American Samoa'
+        code='as'
+        phoneCode='1684' />
+    <country
+        name='Andorra'
+        code='ad'
+        phoneCode='376' />
+    <country
+        name='Anguilla'
+        code='ai'
+        phoneCode='1264' />
+    <country
+        name='Angola'
+        code='ao'
+        phoneCode='244' />
+    <country
+        name='Antigua and Barbuda'
+        code='ag'
+        phoneCode='1268' />
+    <country
+        name='Argentina'
+        code='ar'
+        phoneCode='54' />
+    <country
+        name='Armenia'
+        code='am'
+        phoneCode='374' />
+    <country
+        name='Aruba'
+        code='aw'
+        phoneCode='297' />
+    <country
+        name='Australia'
+        code='au'
+        phoneCode='61' />
+    <country
+        name='Austria'
+        code='at'
+        phoneCode='43' />
+    <country
+        name='Azerbaijan'
+        code='az'
+        phoneCode='994' />
+    <country
+        name='Bahamas'
+        code='bs'
+        phoneCode='1242' />
+    <country
+        name='Bahrain'
+        code='bh'
+        phoneCode='973' />
+    <country
+        name='Bangladesh'
+        code='bd'
+        phoneCode='880' />
+    <country
+        name='Barbados'
+        code='bb'
+        phoneCode='1246' />
+    <country
+        name='Belarus'
+        code='by'
+        phoneCode='375' />
+    <country
+        name='Belgium'
+        code='be'
+        phoneCode='32' />
+    <country
+        name='Belize'
+        code='bz'
+        phoneCode='501' />
+    <country
+        name='Benin'
+        code='bj'
+        phoneCode='229' />
+    <country
+        name='Bermuda'
+        code='bm'
+        phoneCode='440' />
+    <country
+        name='Bhutan'
+        code='bt'
+        phoneCode='975' />
+    <country
+        name='Bolivia'
+        code='bo'
+        phoneCode='591' />
+    <country
+        name='Bonaire'
+        code='bq'
+        phoneCode='599' />
+    <country
+        name='Bosnia And Herzegovina'
+        code='ba'
+        phoneCode='387' />
+    <country
+        name='Botswana'
+        code='bw'
+        phoneCode='267' />
+    <country
+        name='Brazil'
+        code='br'
+        phoneCode='55' />
+    <country
+        name='British Indian Ocean Territory'
+        code='io'
+        phoneCode='246' />
+    <country
+        name='British Virgin Islands'
+        code='vg'
+        phoneCode='1284' />
+    <country
+        name='Brunei'
+        code='bn'
+        phoneCode='673' />
+    <country
+        name='Bulgaria'
+        code='bg'
+        phoneCode='359' />
+    <country
+        name='Burkina Faso'
+        code='bf'
+        phoneCode='226' />
+    <country
+        name='Burundi'
+        code='bi'
+        phoneCode='257' />
+    <country
+        name='Cambodia'
+        code='kh'
+        phoneCode='855' />
+    <country
+        name='Cameroon'
+        code='cm'
+        phoneCode='237' />
+    <country
+        name='Canada'
+        code='ca'
+        phoneCode='1' />
+    <country
+        name='Cape Verde'
+        code='cv'
+        phoneCode='238' />
+    <country
+        name='Cayman Islands'
+        code='ky'
+        phoneCode='1345' />
+    <country
+        name='Central African Republic'
+        code='cf'
+        phoneCode='236' />
+    <country
+        name='Chad'
+        code='td'
+        phoneCode='235' />
+    <country
+        name='Chile'
+        code='cl'
+        phoneCode='56' />
+    <country
+        name='China'
+        code='cn'
+        phoneCode='86' />
+    <country
+        name='China  Republic of (Taiwan)'
+        code='tw'
+        phoneCode='886' />
+    <country
+        name='Christmas Island'
+        code='cx'
+        phoneCode='61' />
+    <country
+        name='Cocos (Keeling) Islands'
+        code='cc'
+        phoneCode='891' />
+    <country
+        name='Colombia'
+        code='co'
+        phoneCode='57' />
+    <country
+        name='Comoros'
+        code='km'
+        phoneCode='269' />
+    <country
+        name='Congo (Congo Brazzaville)'
+        code='cg'
+        phoneCode='242' />
+    <country
+        name='Congo (Congo  Kinshasa)'
+        code='cd'
+        phoneCode='243' />
+    <country
+        name='Cook Islands'
+        code='ck'
+        phoneCode='682' />
+    <country
+        name='Costa Rica'
+        code='cr'
+        phoneCode='506' />
+    <country
+        name='Cote dIvoire (Ivory Coast)'
+        code='ci'
+        phoneCode='225' />
+    <country
+        name='Croatia'
+        code='hr'
+        phoneCode='385' />
+    <country
+        name='Cuba'
+        code='cu'
+        phoneCode='53' />
+    <country
+        name='Cyprus'
+        code='cy'
+        phoneCode='357' />
+    <country
+        name='Czech Republic'
+        code='cz'
+        phoneCode='420' />
+    <country
+        name='Denmark'
+        code='dk'
+        phoneCode='45' />
+    <country
+        name='Djibouti'
+        code='dj'
+        phoneCode='253' />
+    <country
+        name='Dominica'
+        code='dm'
+        phoneCode='1767' />
+    <country
+        name='Dominican Republic'
+        code='do'
+        phoneCode='1809' />
+    <country
+        name='Ecuador'
+        code='ec'
+        phoneCode='593' />
+    <country
+        name='Egypt'
+        code='eg'
+        phoneCode='20' />
+    <country
+        name='El Salvador'
+        code='sv'
+        phoneCode='503' />
+    <country
+        name='Equatorial Guinea'
+        code='gq'
+        phoneCode='240' />
+    <country
+        name='Eritrea'
+        code='er'
+        phoneCode='291' />
+    <country
+        name='Estonia'
+        code='ee'
+        phoneCode='372' />
+    <country
+        name='Ethiopia'
+        code='et'
+        phoneCode='251' />
+    <country
+        name='Falkland Islands (Islas Malvinas)'
+        code='fk'
+        phoneCode='500' />
+    <country
+        name='Faroe Islands'
+        code='fo'
+        phoneCode='298' />
+    <country
+        name='Fiji'
+        code='fj'
+        phoneCode='679' />
+    <country
+        name='Finland'
+        code='fi'
+        phoneCode='358' />
+    <country
+        name='France'
+        code='fr'
+        phoneCode='33' />
+    <country
+        name='French Guiana'
+        code='gf'
+        phoneCode='594' />
+    <country
+        name='French Polynesia'
+        code='pf'
+        phoneCode='689' />
+    <country
+        name='Gabon'
+        code='ga'
+        phoneCode='241' />
+    <country
+        name='Gambia'
+        code='gm'
+        phoneCode='220' />
+    <country
+        name='Georgia'
+        code='ge'
+        phoneCode='995' />
+    <country
+        name='Germany'
+        code='de'
+        phoneCode='49' />
+    <country
+        name='Ghana'
+        code='gh'
+        phoneCode='233' />
+    <country
+        name='Gibraltar'
+        code='gi'
+        phoneCode='350' />
+    <country
+        name='Greece'
+        code='gr'
+        phoneCode='30' />
+    <country
+        name='Greenland'
+        code='gl'
+        phoneCode='299' />
+    <country
+        name='Grenada'
+        code='gd'
+        phoneCode='1473' />
+    <country
+        name='Guadeloupe'
+        code='gp'
+        phoneCode='590' />
+    <country
+        name='Guam'
+        code='gu'
+        phoneCode='1671' />
+    <country
+        name='Guatemala'
+        code='gt'
+        phoneCode='502' />
+    <country
+        name='Guernsey'
+        code='gg'
+        phoneCode='44' />
+    <country
+        name='Guinea'
+        code='gn'
+        phoneCode='224' />
+    <country
+        name='Guinea-bissau'
+        code='gw'
+        phoneCode='245' />
+    <country
+        name='Guyana'
+        code='gy'
+        phoneCode='592' />
+    <country
+        name='Haiti'
+        code='ht'
+        phoneCode='509' />
+    <country
+        name='Honduras'
+        code='hn'
+        phoneCode='504' />
+    <country
+        name='Hong Kong'
+        code='hk'
+        phoneCode='852' />
+    <country
+        name='Hungary'
+        code='hu'
+        phoneCode='36' />
+    <country
+        name='Iceland'
+        code='is'
+        phoneCode='354' />
+    <country
+        name='India'
+        code='in'
+        phoneCode='91' />
+    <country
+        name='Indonesia'
+        code='id'
+        phoneCode='62' />
+    <country
+        name='Iran'
+        code='ir'
+        phoneCode='98' />
+    <country
+        name='Iraq'
+        code='iq'
+        phoneCode='964' />
+    <country
+        name='Ireland'
+        code='ie'
+        phoneCode='353' />
+    <country
+        name='Isle Of Man'
+        code='im'
+        phoneCode='44' />
+    <country
+        name='Israel'
+        code='il'
+        phoneCode='972' />
+    <country
+        name='Italy'
+        code='it'
+        phoneCode='39' />
+    <country
+        name='Jamaica'
+        code='jm'
+        phoneCode='1876' />
+    <country
+        name='Japan'
+        code='jp'
+        phoneCode='81' />
+    <country
+        name='Jordan'
+        code='jo'
+        phoneCode='962' />
+    <country
+        name='Jersey'
+        code='je'
+        phoneCode='44' />
+    <country
+        name='Kazakhstan'
+        code='kz'
+        phoneCode='7' />
+    <country
+        name='Kenya'
+        code='ke'
+        phoneCode='254' />
+    <country
+        name='Kiribati'
+        code='ki'
+        phoneCode='686' />
+    <country
+        name='Korea North'
+        code='kp'
+        phoneCode='850' />
+    <country
+        name='Korea South'
+        code='kr'
+        phoneCode='82' />
+    <country
+        name='Kuwait'
+        code='kw'
+        phoneCode='965' />
+    <country
+        name='Kyrgyzstan'
+        code='kg'
+        phoneCode='996' />
+    <country
+        name='Lao'
+        code='la'
+        phoneCode='856' />
+    <country
+        name='Latvia'
+        code='lv'
+        phoneCode='371' />
+    <country
+        name='Lebanon'
+        code='lb'
+        phoneCode='961' />
+    <country
+        name='Lesotho'
+        code='ls'
+        phoneCode='266' />
+    <country
+        name='Liberia'
+        code='lr'
+        phoneCode='231' />
+    <country
+        name='Libya'
+        code='ly'
+        phoneCode='218' />
+    <country
+        name='Liechtenstein'
+        code='li'
+        phoneCode='423' />
+    <country
+        name='Lithuania'
+        code='lt'
+        phoneCode='370' />
+    <country
+        name='Luxembourg'
+        code='lu'
+        phoneCode='352' />
+    <country
+        name='Macau'
+        code='mo'
+        phoneCode='853' />
+    <country
+        name='Macedonia'
+        code='mk'
+        phoneCode='389' />
+    <country
+        name='Madagascar'
+        code='mg'
+        phoneCode='261' />
+    <country
+        name='Malawi'
+        code='mw'
+        phoneCode='265' />
+    <country
+        name='Malaysia'
+        code='my'
+        phoneCode='60' />
+    <country
+        name='Maldives'
+        code='mv'
+        phoneCode='960' />
+    <country
+        name='Mali'
+        code='ml'
+        phoneCode='223' />
+    <country
+        name='Malta'
+        code='mt'
+        phoneCode='356' />
+    <country
+        name='Martinique'
+        code='mq'
+        phoneCode='596' />
+    <country
+        name='Marshall Islands'
+        code='mh'
+        phoneCode='692' />
+    <country
+        name='Mauritania'
+        code='mr'
+        phoneCode='222' />
+    <country
+        name='Mauritius'
+        code='mu'
+        phoneCode='230' />
+    <country
+        name='Mexico'
+        code='mx'
+        phoneCode='52' />
+    <country
+        name='Micronesia'
+        code='fm'
+        phoneCode='691' />
+    <country
+        name='Moldova'
+        code='md'
+        phoneCode='373' />
+    <country
+        name='Monaco'
+        code='mc'
+        phoneCode='377' />
+    <country
+        name='Mongolia'
+        code='mn'
+        phoneCode='976' />
+    <country
+        name='Montenegro'
+        code='me'
+        phoneCode='382' />
+    <country
+        name='Montserrat'
+        code='ms'
+        phoneCode='1664' />
+    <country
+        name='Morocco'
+        code='ma'
+        phoneCode='212' />
+    <country
+        name='Mozambique'
+        code='mz'
+        phoneCode='258' />
+    <country
+        name='Myanmar (Burma)'
+        code='mm'
+        phoneCode='95' />
+    <country
+        name='Nagorno-Karabakh'
+        code='az'
+        phoneCode='374' />
+    <country
+        name='Namibia'
+        code='na'
+        phoneCode='264' />
+    <country
+        name='Nauru'
+        code='nr'
+        phoneCode='674' />
+    <country
+        name='Nepal'
+        code='np'
+        phoneCode='977' />
+    <country
+        name='Netherlands'
+        code='nl'
+        phoneCode='31' />
+    <country
+        name='Netherlands Antilles'
+        code='an'
+        phoneCode='599' />
+    <country
+        name='New Caledonia'
+        code='nc'
+        phoneCode='687' />
+    <country
+        name='New Zealand'
+        code='nz'
+        phoneCode='64' />
+    <country
+        name='Nicaragua'
+        code='ni'
+        phoneCode='505' />
+    <country
+        name='Niger'
+        code='ne'
+        phoneCode='227' />
+    <country
+        name='Nigeria'
+        code='ng'
+        phoneCode='234' />
+    <country
+        name='Niue'
+        code='nu'
+        phoneCode='683' />
+    <country
+        name='Norfolk Island'
+        code='nf'
+        phoneCode='6723' />
+    <country
+        name='Northern Mariana Islands'
+        code='mp'
+        phoneCode='1670' />
+    <country
+        name='Northern Cyprus'
+        code='cy'
+        phoneCode='90' />
+    <country
+        name='Norway'
+        code='no'
+        phoneCode='47' />
+    <country
+        name='Oman'
+        code='om'
+        phoneCode='968' />
+    <country
+        name='Pakistan'
+        code='pk'
+        phoneCode='92' />
+    <country
+        name='Palau'
+        code='pw'
+        phoneCode='680' />
+    <country
+        name='Panama'
+        code='pa'
+        phoneCode='507' />
+    <country
+        name='Papua New Guinea'
+        code='pg'
+        phoneCode='675' />
+    <country
+        name='Paraguay'
+        code='py'
+        phoneCode='595' />
+    <country
+        name='Peru'
+        code='pe'
+        phoneCode='51' />
+    <country
+        name='Philippines'
+        code='ph'
+        phoneCode='63' />
+    <country
+        name='Poland'
+        code='pl'
+        phoneCode='48' />
+    <country
+        name='Portugal'
+        code='pt'
+        phoneCode='351' />
+    <country
+        name='Pridnestrovie (Transnistria)'
+        code='md'
+        phoneCode='373' />
+    <country
+        name='Puerto Rico'
+        code='pr'
+        phoneCode='1787' />
+    <country
+        name='Qatar'
+        code='qa'
+        phoneCode='974' />
+    <country
+        name='Reunion'
+        code='re'
+        phoneCode='262' />
+    <country
+        name='Romania'
+        code='ro'
+        phoneCode='40' />
+    <country
+        name='Russia'
+        code='ru'
+        phoneCode='7' />
+    <country
+        name='Rwanda'
+        code='rw'
+        phoneCode='250' />
+    <country
+        name='Reunion French)'
+        code='re'
+        phoneCode='262' />
+    <country
+        name='Saint Helena'
+        code='sh'
+        phoneCode='290' />
+    <country
+        name='Saint Barthelemy'
+        code='gp'
+        phoneCode='590' />
+    <country
+        name='Saint Kitts and Nevis'
+        code='kn'
+        phoneCode='1869' />
+    <country
+        name='Saint Lucia'
+        code='lc'
+        phoneCode='1758' />
+    <country
+        name='Saint Martin'
+        code='gp'
+        phoneCode='590' />
+    <country
+        name='Saint Pierre and Miquelon'
+        code='pm'
+        phoneCode='508' />
+    <country
+        name='Saint Vincent and the Grenadines'
+        code='vc'
+        phoneCode='1784' />
+    <country
+        name='Samoa'
+        code='ws'
+        phoneCode='685' />
+    <country
+        name='San Marino'
+        code='sm'
+        phoneCode='378' />
+    <country
+        name='Sao Tome And Principe'
+        code='st'
+        phoneCode='239' />
+    <country
+        name='Saudi Arabia'
+        code='sa'
+        phoneCode='966' />
+    <country
+        name='Senegal'
+        code='sn'
+        phoneCode='221' />
+    <country
+        name='Serbia'
+        code='rs'
+        phoneCode='381' />
+    <country
+        name='Seychelles'
+        code='sc'
+        phoneCode='248' />
+    <country
+        name='Sierra Leone'
+        code='sl'
+        phoneCode='232' />
+    <country
+        name='Singapore'
+        code='sg'
+        phoneCode='65' />
+    <country
+        name='Slovakia'
+        code='sk'
+        phoneCode='421' />
+    <country
+        name='Slovenia'
+        code='si'
+        phoneCode='386' />
+    <country
+        name='Solomon Islands'
+        code='sb'
+        phoneCode='677' />
+    <country
+        name='Somalia'
+        code='so'
+        phoneCode='252' />
+    <country
+        name='South Africa'
+        code='za'
+        phoneCode='27' />
+    <country
+        name='South Ossetia'
+        code='ge'
+        phoneCode='995' />
+    <country
+        name='Spain'
+        code='es'
+        phoneCode='34' />
+    <country
+        name='Sri Lanka'
+        code='lk'
+        phoneCode='94' />
+    <country
+        name='Sudan'
+        code='sd'
+        phoneCode='249' />
+    <country
+        name='Suriname'
+        code='sr'
+        phoneCode='597' />
+    <country
+        name='Svalbard'
+        code='sj'
+        phoneCode='4779' />
+    <country
+        name='Swaziland'
+        code='sz'
+        phoneCode='268' />
+    <country
+        name='Sweden'
+        code='se'
+        phoneCode='46' />
+    <country
+        name='Switzerland'
+        code='ch'
+        phoneCode='41' />
+    <country
+        name='Syrian'
+        code='sy'
+        phoneCode='963' />
+    <country
+        name='Tajikistan'
+        code='tj'
+        phoneCode='992' />
+    <country
+        name='Tanzania'
+        code='tz'
+        phoneCode='255' />
+    <country
+        name='Thailand'
+        code='th'
+        phoneCode='66' />
+    <country
+        name='Timor-Leste (East Timor)'
+        code='tl'
+        phoneCode='670' />
+    <country
+        name='Togo'
+        code='tg'
+        phoneCode='228' />
+    <country
+        name='Tonga'
+        code='to'
+        phoneCode='676' />
+    <country
+        name='Tokelau'
+        code='tk'
+        phoneCode='690' />
+    <country
+        name='Turks and Caicos Islands'
+        code='tc'
+        phoneCode='1649' />
+    <country
+        name='Trinidad and Tobago'
+        code='tt'
+        phoneCode='1868' />
+    <country
+        name='Tristan da Cunha'
+        code='ta'
+        phoneCode='2908' />
+    <country
+        name='Tunisia'
+        code='tn'
+        phoneCode='216' />
+    <country
+        name='Turkey'
+        code='tr'
+        phoneCode='90' />
+    <country
+        name='Turkmenistan'
+        code='tm'
+        phoneCode='993' />
+    <country
+        name='Tuvalu'
+        code='tv'
+        phoneCode='688' />
+    <country
+        name='Uganda'
+        code='ug'
+        phoneCode='256' />
+    <country
+        name='Ukraine'
+        code='ua'
+        phoneCode='380' />
+    <country
+        name='United Arab Emirates'
+        code='ae'
+        phoneCode='971' />
+    <country
+        name='United Kingdom'
+        code='gb'
+        phoneCode='44' />
+    <country
+        name='United States'
+        code='us'
+        phoneCode='1' />
+    <country
+        name='Uruguay'
+        code='uy'
+        phoneCode='598' />
+    <country
+        name='U.S. Virgin Islands'
+        code='vi'
+        phoneCode='1340' />
+    <country
+        name='Uzbekistan'
+        code='uz'
+        phoneCode='998' />
+    <country
+        name='Vanuatu'
+        code='vu'
+        phoneCode='678' />
+    <country
+        name='Vatican City'
+        code='va'
+        phoneCode='379' />
+    <country
+        name='Venezuela'
+        code='ve'
+        phoneCode='58' />
+    <country
+        name='Vietnam'
+        code='vn'
+        phoneCode='84' />
+    <country
+        name='Wallis and Futuna'
+        code='wf'
+        phoneCode='681' />
+    <country
+        name='Yemen'
+        code='ye'
+        phoneCode='967' />
+    <country
+        name='Zambia'
+        code='zm'
+        phoneCode='260' />
+    <country
+        name='Zimbabwe'
+        code='zw'
+        phoneCode='263' />
+</countries>

@@ -10,4 +10,5 @@ pod 'Moya'
 pod 'ObjectMapper', '~> 3.4'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod ‘FLAnimatedImage’
 end
