@@ -17,6 +17,18 @@ class SignupOptionPageVCViewController: UIViewController {
     }
     
     @IBAction func alreadyRegisteredUserPressed(_ sender: UIButton) {
+        for vc in self.navigationController?.viewControllers ?? [UIViewController]() {
+            if vc is LoginScreen{
+                self.navigationController?.popToViewController(vc, animated: true)
+                return;
+            }
+            
+            
+        }
+        let loginvc = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
+        self.navigationController?.pushViewController(loginvc, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
+        
     }
     @IBAction func signupViaPhonePressed(_ sender: MentorzButton) {
         

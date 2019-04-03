@@ -11,7 +11,12 @@ import UIKit
 class SignupScreen: UIViewController,countryCodeDelegate {
     func getcountryCode(code: String) {
         self.Code.setTitle("+"+code, for: .normal)
+        req.phoneNumber?.cc = code
     }
+    let req = LoginRequest()
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var phoneField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     
 
@@ -28,15 +33,17 @@ class SignupScreen: UIViewController,countryCodeDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func alreadyRegisteredPressed(_ sender: UIButton) {
+        let vc = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
+    
+    @IBAction func signupButtonPressed(_ sender: MentorzButton) {
+        req.userProfile?.name = nameField.text
+        req.phoneNumber?.number = phoneField.text
+        req.password = passwordField.text
+    }
+    
+    
 }

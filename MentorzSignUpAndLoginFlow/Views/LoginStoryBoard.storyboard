@@ -78,6 +78,9 @@
                                 <state key="normal" title="+1">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="countryCodePressed:" destination="vxe-U7-NNg" eventType="touchUpInside" id="CbL-pM-Qt4"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nw4-7A-a30">
                                 <rect key="frame" x="16" y="365" width="343" height="40"/>
@@ -154,6 +157,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="newUserSignupPressed:" destination="vxe-U7-NNg" eventType="touchUpInside" id="f3Z-c9-XfV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuw-XY-DkZ">
                                 <rect key="frame" x="179" y="331" width="17" height="18"/>
@@ -203,6 +209,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M99-jD-6JL"/>
                     </view>
+                    <connections>
+                        <outlet property="code" destination="oHC-3e-PEv" id="jvj-c2-LtE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9AE-N7-jPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,23 +8,36 @@
 
 import UIKit
 
-class LoginScreen: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class LoginScreen: UIViewController,countryCodeDelegate {
+    func getcountryCode(code: String) {
+         self.code.setTitle("+"+code, for: .normal)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var code: CountryListButton!
+    @IBAction func countryCodePressed(_ sender: CountryListButton) {
+        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryList") as! CountryList
+        vc.delegateCode = self
+        self.present(vc, animated: true, completion: nil)
     }
-    */
+    
+    @IBAction func newUserSignupPressed(_ sender: UIButton) {
+        for vc in self.navigationController?.viewControllers ?? [UIViewController]() {
+            if vc is SignupOptionPageVCViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+                return;
+            }
+            
+            
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+       
+    }
+    
+
+   
 }

@@ -300,6 +300,9 @@
                                 <state key="normal" title="Signup">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupButtonPressed:" destination="xmn-wF-riH" eventType="touchUpInside" id="eLD-PS-EFA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOo-Dr-Ybh">
                                 <rect key="frame" x="24" y="216" width="327" height="50"/>
@@ -336,6 +339,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="alreadyRegisteredPressed:" destination="xmn-wF-riH" eventType="touchUpInside" id="b2W-97-fpM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -367,6 +373,9 @@
                     </view>
                     <connections>
                         <outlet property="Code" destination="Sxo-Xh-DRV" id="uU0-Ih-rdt"/>
+                        <outlet property="nameField" destination="WE5-NQ-TP2" id="UXQ-Dr-XFQ"/>
+                        <outlet property="passwordField" destination="wOo-Dr-Ybh" id="eHp-7l-km8"/>
+                        <outlet property="phoneField" destination="Dxf-Ts-MSN" id="ZVa-Om-HA9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOp-ef-Bg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
