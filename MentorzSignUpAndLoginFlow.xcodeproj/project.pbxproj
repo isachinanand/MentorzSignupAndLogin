@@ -21,6 +21,9 @@
 		A30D61FD22547A0F00064CED /* SignupGIFpageVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61FC22547A0F00064CED /* SignupGIFpageVCViewController.swift */; };
 		A30D61FF2254861800064CED /* MentorzButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D61FE2254861800064CED /* MentorzButton.swift */; };
 		A30D62012254A6CC00064CED /* SignupOptionPageVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D62002254A6CC00064CED /* SignupOptionPageVCViewController.swift */; };
+		A30D62032254B85000064CED /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D62022254B85000064CED /* CountryList.swift */; };
+		A30D62062254B89600064CED /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D62042254B89600064CED /* CountryCell.swift */; };
+		A30D62072254B89600064CED /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30D62052254B89600064CED /* CountryCell.xib */; };
 		A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAD224F331B00A444EC /* AppDelegate.swift */; };
 		A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AAF224F331B00A444EC /* ViewController.swift */; };
 		A39B4AB3224F331B00A444EC /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AB1224F331B00A444EC /* Signup.storyboard */; };
@@ -40,6 +43,10 @@
 		A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */; };
 		A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */; };
 		A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AED2252900F00A444EC /* FirebaseManager.swift */; };
+		A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3976F2254D19A00C140C6 /* SignupScreen.swift */; };
+		A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397712254D1DE00C140C6 /* CountryListButton.swift */; };
+		A3A397742254E37A00C140C6 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */; };
+		A3A397762254EC6F00C140C6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397752254EC6F00C140C6 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +64,9 @@
 		A30D61FC22547A0F00064CED /* SignupGIFpageVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupGIFpageVCViewController.swift; sourceTree = "<group>"; };
 		A30D61FE2254861800064CED /* MentorzButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorzButton.swift; sourceTree = "<group>"; };
 		A30D62002254A6CC00064CED /* SignupOptionPageVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOptionPageVCViewController.swift; sourceTree = "<group>"; };
+		A30D62022254B85000064CED /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
+		A30D62042254B89600064CED /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		A30D62052254B89600064CED /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
 		A39B4AAA224F331B00A444EC /* MentorzSignUpAndLoginFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorzSignUpAndLoginFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39B4AAD224F331B00A444EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39B4AAF224F331B00A444EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +89,10 @@
 		A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerification.swift; sourceTree = "<group>"; };
 		A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A39B4AED2252900F00A444EC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		A3A3976F2254D19A00C140C6 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		A3A397712254D1DE00C140C6 /* CountryListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListButton.swift; sourceTree = "<group>"; };
+		A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
+		A3A397752254EC6F00C140C6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; sourceTree = "<group>"; };
 		B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzSignUpAndLoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +180,13 @@
 				A30D61FC22547A0F00064CED /* SignupGIFpageVCViewController.swift */,
 				A30D61FE2254861800064CED /* MentorzButton.swift */,
 				A30D62002254A6CC00064CED /* SignupOptionPageVCViewController.swift */,
+				A30D62022254B85000064CED /* CountryList.swift */,
+				A30D62042254B89600064CED /* CountryCell.swift */,
+				A30D62052254B89600064CED /* CountryCell.xib */,
+				A3A3976F2254D19A00C140C6 /* SignupScreen.swift */,
+				A3A397712254D1DE00C140C6 /* CountryListButton.swift */,
+				A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */,
+				A3A397752254EC6F00C140C6 /* LoginScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,10 +353,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30D62072254B89600064CED /* CountryCell.xib in Resources */,
 				A39B4ABB224F331E00A444EC /* LaunchScreen.storyboard in Resources */,
 				A30D61F92254787000064CED /* Default.png in Resources */,
 				A30D61FB2254787000064CED /* onBoardVideo.gif in Resources */,
 				A30D61FA2254787000064CED /* Default@2x.png in Resources */,
+				A3A397742254E37A00C140C6 /* LoginStoryBoard.storyboard in Resources */,
 				A30D61EE2254783100064CED /* countries.xml in Resources */,
 				A30D61F72254787000064CED /* Default-667h@2x.png in Resources */,
 				A30D61F82254787000064CED /* Default-736h@3x.png in Resources */,
@@ -414,10 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30D62032254B85000064CED /* CountryList.swift in Sources */,
 				A39B4AD5225215BC00A444EC /* LoginWithUserResponse.swift in Sources */,
 				A30D61FF2254861800064CED /* MentorzButton.swift in Sources */,
 				A39B4AC7224F3A2300A444EC /* UserManager.swift in Sources */,
 				A39B4AC3224F337400A444EC /* ApiCollection.swift in Sources */,
+				A30D62062254B89600064CED /* CountryCell.swift in Sources */,
 				A39B4ACB224F595B00A444EC /* RegistrationManager.swift in Sources */,
 				A39B4AD32251ECA800A444EC /* LoginRequest.swift in Sources */,
 				A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */,
@@ -425,12 +450,15 @@
 				A39B4AD12251EBC000A444EC /* DeviceInfo.swift in Sources */,
 				A30D61FD22547A0F00064CED /* SignupGIFpageVCViewController.swift in Sources */,
 				A39B4AAE224F331B00A444EC /* AppDelegate.swift in Sources */,
+				A3A397762254EC6F00C140C6 /* LoginScreen.swift in Sources */,
 				A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */,
 				A30D61B12253404200064CED /* ChangePassword.swift in Sources */,
 				A39B4ACD2251D3D300A444EC /* LoginManager.swift in Sources */,
 				A30D61AF225335B700064CED /* UserAccountAPI.swift in Sources */,
 				A30D62012254A6CC00064CED /* SignupOptionPageVCViewController.swift in Sources */,
 				A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */,
+				A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */,
+				A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */,
 				A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
 				A39B4AB6224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld in Sources */,

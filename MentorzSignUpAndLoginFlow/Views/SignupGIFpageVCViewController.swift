@@ -13,6 +13,11 @@ class SignupGIFpageVCViewController: UIViewController {
 
     @IBOutlet weak var myGIF: FLAnimatedImageView!
     
+    @IBAction func signUpButtonPressed(_ sender: MentorzButton) {
+        let signupVC = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignupOptionPageVCViewController") as! SignupOptionPageVCViewController
+        self.navigationController?.pushViewController(signupVC, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
+    }
     override func viewDidLoad() {
       
         
