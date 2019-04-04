@@ -9,7 +9,7 @@
 import UIKit
 
 class OTPScreen: UIViewController {
-
+    
     @IBOutlet weak var firstTxtField: UITextField!
     @IBOutlet weak var secondTxtField: UITextField!
     @IBOutlet weak var thirdTxtField: UITextField!
@@ -21,15 +21,16 @@ class OTPScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-
-        // Do any additional setup after loading the view.
     }
-    
     @IBAction func verifyButtonPressed(_ sender: MentorzButton) {
+        firebase?.matchOTP(verificationCode: getVerificationCode(), handler: { (error) -> (Void) in
+            if error == nil{
+                UserManager.shared.registerUser(request: <#T##LoginRequest#>, handler: { (<#Bool#>) -> (Void) in
+                    <#code#>
+                })
+            }
+        })
     }
-    //MARK:- IBOutlet Properties
-    
-   
     @IBAction func textEditDidBegin(_ sender: UITextField) {
         print("textEditDidBegin has been pressed")
         
@@ -68,14 +69,7 @@ class OTPScreen: UIViewController {
         }
         
     }
-    
-    
-   
-    
-    //MARK:- Custom Action
     func setUpView(){
-        
-        
         firstTxtField.delegate = self
         secondTxtField.delegate = self
         thirdTxtField.delegate = self
@@ -83,26 +77,26 @@ class OTPScreen: UIViewController {
         fifthTxtField.delegate = self
         sixthTxtField.delegate = self
         firstTxtField.becomeFirstResponder()
-        
         buttonUnSelected()
     }
     
     func buttonUnSelected(){
-       
         verifyOTPbutton.isUserInteractionEnabled = false
     }
     func checkAllFilled(){
-        
         if (firstTxtField.text?.isEmpty)! || (secondTxtField.text?.isEmpty)! || (thirdTxtField.text?.isEmpty)! || (fourthTxtField.text?.isEmpty)! || (fifthTxtField.text?.isEmpty)! || (sixthTxtField.text?.isEmpty)!{
             buttonUnSelected()
         }else{
             buttonSelected()
         }
     }
-    
     func buttonSelected(){
         
         verifyOTPbutton.isUserInteractionEnabled = true
+    }
+    func getVerificationCode()-> String
+    {
+        return "\(/firstTxtField.text)"+"\(/secondTxtField.text)"+"\(/thirdTxtField.text)"+"\(/fourthTxtField.text)"+"\(/fifthTxtField.text)"+"\(/sixthTxtField.text)"
     }
     
 }
@@ -146,10 +140,4 @@ extension OTPScreen : UITextFieldDelegate{
     func textFieldDidEndEditing(_ textField: UITextField) {
         checkAllFilled()
     }
-    
-    
-
-
-    
-
 }
