@@ -46,8 +46,12 @@ class SignupScreen: UIViewController,countryCodeDelegate {
         req.userProfile?.name = nameField.text
         req.phoneNumber?.number = phoneField.text
         req.password = passwordField.text
-        firebase.verifyPhone(phoneNumber: /req.phoneNumber) { (isOTPsent) -> (Void) in
-            
+        firebase.verifyPhone(phoneNumber: /req.phoneNumber) { (error) -> (Void) in
+            if error == nil {
+                let otp = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "OTPScreen") as! OTPScreen
+                otp.firebase = self.firebase
+                self.navigationController?.pushViewController(otp, animated: true)
+            }
         }
         
     }

@@ -458,9 +458,6 @@
                                             <constraint firstAttribute="height" constant="50" id="9Sz-9R-OpA"/>
                                             <constraint firstAttribute="width" constant="50" id="AR4-qN-VdW"/>
                                         </constraints>
-                                        <connections>
-                                            <action selector="backBtnAction:" destination="Krq-cG-PoW" eventType="touchUpInside" id="yRJ-yz-oNZ"/>
-                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-lh-Vpr">
                                         <rect key="frame" x="16" y="15" width="20" height="20"/>
@@ -508,6 +505,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="WeE-9P-MGZ"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="Lqc-uf-gx7"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAO-GG-V9F">
                                                 <rect key="frame" x="58.5" y="0.0" width="50.5" height="50.5"/>
@@ -515,6 +516,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="3Ce-qN-bAJ"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="y7P-BF-K79"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zKs-gP-ZQ6">
                                                 <rect key="frame" x="117" y="0.0" width="50.5" height="50.5"/>
@@ -522,6 +527,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="Jrp-P9-be8"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="AL4-d1-OQL"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLa-tg-yPW">
                                                 <rect key="frame" x="175.5" y="0.0" width="50.5" height="50.5"/>
@@ -529,6 +538,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="ihf-Nn-dEc"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="yMy-8V-J6Z"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBj-Tm-XM2">
                                                 <rect key="frame" x="234" y="0.0" width="50.5" height="50.5"/>
@@ -536,6 +549,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="Vr9-ow-F2D"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="9mC-Dt-IBf"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xA-lS-R5j">
                                                 <rect key="frame" x="292.5" y="0.0" width="50.5" height="50.5"/>
@@ -543,6 +560,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textEditChanged:" destination="Krq-cG-PoW" eventType="editingChanged" id="olh-8g-MT6"/>
+                                                    <action selector="textEditDidBegin:" destination="Krq-cG-PoW" eventType="editingDidBegin" id="aTy-Gr-WM8"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -614,15 +635,13 @@
                         <viewLayoutGuide key="safeArea" id="Jwf-gt-MEL"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="M4S-7G-noZ" id="c6P-mj-E0i"/>
-                        <outlet property="contentView" destination="mxC-7h-h3d" id="BfH-oI-QOG"/>
                         <outlet property="fifthTxtField" destination="bBj-Tm-XM2" id="vMD-GA-0DR"/>
                         <outlet property="firstTxtField" destination="XL8-vZ-dp1" id="gEc-1T-Q9o"/>
                         <outlet property="fourthTxtField" destination="oLa-tg-yPW" id="Y5j-wa-m9l"/>
-                        <outlet property="numberLabel" destination="66y-lC-WqL" id="tsY-95-kzG"/>
                         <outlet property="secondTxtField" destination="uAO-GG-V9F" id="t2d-db-TXJ"/>
                         <outlet property="sixthTxtField" destination="4xA-lS-R5j" id="Twz-TE-FA9"/>
                         <outlet property="thirdTxtField" destination="zKs-gP-ZQ6" id="veY-QV-pIm"/>
+                        <outlet property="verifyOTPbutton" destination="lCl-So-ADZ" id="VSv-nu-6Vn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoU-xQ-eTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
