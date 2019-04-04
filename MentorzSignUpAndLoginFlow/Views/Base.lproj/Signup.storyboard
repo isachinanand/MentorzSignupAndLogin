@@ -461,6 +461,9 @@
                                             <constraint firstAttribute="height" constant="50" id="9Sz-9R-OpA"/>
                                             <constraint firstAttribute="width" constant="50" id="AR4-qN-VdW"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Krq-cG-PoW" eventType="touchUpInside" id="pHU-Wh-vYi"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-lh-Vpr">
                                         <rect key="frame" x="16" y="15" width="20" height="20"/>
@@ -490,8 +493,8 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-4u-Rey">
-                                        <rect key="frame" x="16" y="207.5" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-4u-Rey">
+                                        <rect key="frame" x="16" y="207.5" width="107" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -575,6 +578,9 @@
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" red="0.95294117649999999" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resentOTPpressed:" destination="Krq-cG-PoW" eventType="touchUpInside" id="uLZ-Q6-ZL9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-So-ADZ" customClass="MentorzButton" customModule="MentorzSignUpAndLoginFlow" customModuleProvider="target">
                                         <rect key="frame" x="16" y="396.5" width="343" height="48"/>
@@ -641,6 +647,7 @@
                         <outlet property="fifthTxtField" destination="bBj-Tm-XM2" id="vMD-GA-0DR"/>
                         <outlet property="firstTxtField" destination="XL8-vZ-dp1" id="gEc-1T-Q9o"/>
                         <outlet property="fourthTxtField" destination="oLa-tg-yPW" id="Y5j-wa-m9l"/>
+                        <outlet property="phoneNumberLabel" destination="66y-lC-WqL" id="FoV-DV-Fka"/>
                         <outlet property="secondTxtField" destination="uAO-GG-V9F" id="t2d-db-TXJ"/>
                         <outlet property="sixthTxtField" destination="4xA-lS-R5j" id="Twz-TE-FA9"/>
                         <outlet property="thirdTxtField" destination="zKs-gP-ZQ6" id="veY-QV-pIm"/>

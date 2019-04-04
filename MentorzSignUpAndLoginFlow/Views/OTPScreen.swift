@@ -21,6 +21,7 @@ class OTPScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        phoneNumberLabel.text = usercredentials?.phonenumber?.getPhoneNumberInString()
     }
     @IBAction func verifyButtonPressed(_ sender: MentorzButton) {
         SVProgressHUD.show(withStatus: "Verifing OTP ....")
@@ -34,6 +35,18 @@ class OTPScreen: UIViewController {
                 })
             }
         })
+    }
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
+    @IBAction func resentOTPpressed(_ sender: UIButton) {
+        usercredentials?.sendOTP(handler: { (error) in
+            if let err = error {
+                SVProgressHUD.showError(withStatus: "\(/err.localizedDescription)")
+            }
+        })
+    }
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func textEditDidBegin(_ sender: UITextField) {
         print("textEditDidBegin has been pressed")

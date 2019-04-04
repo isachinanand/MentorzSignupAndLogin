@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import SVProgressHUD
 
 class LoginScreen: UIViewController,countryCodeDelegate {
     
@@ -44,15 +45,18 @@ class LoginScreen: UIViewController,countryCodeDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        passwordField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        emailField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        phoneField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
+        
     }
     @IBAction func fbLoginButtonPressed(_ sender: MentorzButton) {
         FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in
             if let fbuser = userprofile {
                 print(fbuser.id)
             }else{
-                print("errrorrrrrr",error)
+                SVProgressHUD.showError(withStatus: "\(/error?.localizedDescription)")
             }
         }
     }
@@ -61,8 +65,41 @@ class LoginScreen: UIViewController,countryCodeDelegate {
     }
     
     @IBAction func loginButtonPressed(_ sender: MentorzButton) {
-        
+        SVProgressHUD.show(withStatus: "Logging In")
+        self.usercredentials.loginUser { (statusCode, newuser) in
+            SVProgressHUD.dismiss()
+            if let user = newuser{
+                print(user)
+                let vc = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "AfterLoginScreen") as! AfterLoginScreen
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else if(statusCode==400){
+                SVProgressHUD.showError(withStatus: "Bad Request")
+            }else if(statusCode==401){
+                SVProgressHUD.showError(withStatus: "Unauthozied")
+            }else if(statusCode==403){
+                SVProgressHUD.showError(withStatus: "Forbidden")
+            }else if(statusCode==404){
+                SVProgressHUD.showError(withStatus: "Not Found")
+            }
+            
+        }
     }
     
-   
+    
 }
+extension LoginScreen:UITextFieldDelegate{
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if textField == emailField{
+            self.usercredentials.email = textField.text
+        }else if textField == phoneField{
+            self.usercredentials.phonenumber?.number = textField.text
+        }else if textField == passwordField{
+            self.usercredentials.password = textField.text
+        }else {
+            
+        }
+        
+        
+    }
+}
+

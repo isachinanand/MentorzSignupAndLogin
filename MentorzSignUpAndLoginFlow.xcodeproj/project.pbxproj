@@ -45,6 +45,7 @@
 		A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AED2252900F00A444EC /* FirebaseManager.swift */; };
 		A39B62252256283B000FE8F5 /* UserCredentialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B62242256283B000FE8F5 /* UserCredentialController.swift */; };
 		A39B622722563CE4000FE8F5 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B622622563CE4000FE8F5 /* FBManager.swift */; };
+		A39B622922564592000FE8F5 /* AfterLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B622822564592000FE8F5 /* AfterLoginScreen.swift */; };
 		A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3976F2254D19A00C140C6 /* SignupScreen.swift */; };
 		A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397712254D1DE00C140C6 /* CountryListButton.swift */; };
 		A3A397742254E37A00C140C6 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */; };
@@ -95,6 +96,7 @@
 		A39B4AED2252900F00A444EC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A39B62242256283B000FE8F5 /* UserCredentialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialController.swift; sourceTree = "<group>"; };
 		A39B622622563CE4000FE8F5 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		A39B622822564592000FE8F5 /* AfterLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginScreen.swift; sourceTree = "<group>"; };
 		A3A3976F2254D19A00C140C6 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 		A3A397712254D1DE00C140C6 /* CountryListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListButton.swift; sourceTree = "<group>"; };
 		A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */,
 				A3A397752254EC6F00C140C6 /* LoginScreen.swift */,
 				A3A397792255E82C00C140C6 /* OTPScreen.swift */,
+				A39B622822564592000FE8F5 /* AfterLoginScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */,
 				A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */,
 				A39B622722563CE4000FE8F5 /* FBManager.swift in Sources */,
+				A39B622922564592000FE8F5 /* AfterLoginScreen.swift in Sources */,
 				A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
 				A39B4AB6224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld in Sources */,
