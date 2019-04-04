@@ -45,11 +45,16 @@ class LoginScreen: UIViewController,countryCodeDelegate {
 
        
     }
+    @IBAction func fbLoginButtonPressed(_ sender: MentorzButton) {
+    }
+    
+    @IBAction func linkedinLoginPressed(_ sender: MentorzButton) {
+    }
     
     @IBAction func loginButtonPressed(_ sender: MentorzButton) {
-        req.phoneNumber?.number = phoneField.text
-        req.email_id = emailField.text ?? ""
-        req.password = passwordField.text
+        req.phoneNumber?.number = /phoneField.text
+        req.email_id = /emailField.text
+        req.password = /passwordField.text
         UserManager.shared.loginUser(request: req) { (statuscode, newuser) -> (Void) in
             
         }

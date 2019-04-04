@@ -39,6 +39,9 @@
                                 <state key="normal" title="Facebook">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fbLoginButtonPressed:" destination="vxe-U7-NNg" eventType="touchUpInside" id="fxD-6F-N4y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-s2-4Vc" customClass="MentorzButton" customModule="MentorzSignUpAndLoginFlow" customModuleProvider="target">
                                 <rect key="frame" x="192.5" y="175" width="166.5" height="50"/>
@@ -49,6 +52,9 @@
                                 <state key="normal" title="Linkedin">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="linkedinLoginPressed:" destination="vxe-U7-NNg" eventType="touchUpInside" id="2Px-Wz-z4o"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM2-rA-3YV">
                                 <rect key="frame" x="179" y="241" width="17" height="18"/>
