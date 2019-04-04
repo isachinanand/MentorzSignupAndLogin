@@ -12,7 +12,6 @@ import FLAnimatedImage
 class SignupGIFpageVCViewController: UIViewController {
 
     @IBOutlet weak var myGIF: FLAnimatedImageView!
-    
     @IBAction func signUpButtonPressed(_ sender: MentorzButton) {
         let signupVC = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "SignupOptionPageVCViewController") as! SignupOptionPageVCViewController
         self.navigationController?.pushViewController(signupVC, animated: true)
@@ -26,6 +25,13 @@ class SignupGIFpageVCViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func alreadyAccountPressed(_ sender: UIButton) {
+        let loginVC = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
+        self.navigationController?.pushViewController(loginVC, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     func makeGIF(){
         let path = Bundle.main.path(forResource: "onBoardVideo", ofType: "gif")
         let url = URL(fileURLWithPath: /path)

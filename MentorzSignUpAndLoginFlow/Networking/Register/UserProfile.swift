@@ -20,7 +20,9 @@ class UserProfile: NSObject, Mappable{
     var lresId : String?
     var videoBioLres : String?
    
-   
+    override init() {
+        super.init()
+    }
     required init?(map: Map){}
     func mapping(map: Map)
     {

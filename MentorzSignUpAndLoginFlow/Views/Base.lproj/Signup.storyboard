@@ -64,6 +64,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="alreadyAccountPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aey-6s-fhE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-MT-l0d">
                                 <rect key="frame" x="16" y="619" width="343" height="40"/>

@@ -43,6 +43,8 @@
 		A39B4AE62252858400A444EC /* PhoneNumberVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */; };
 		A39B4AEC22528EF500A444EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */; };
 		A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B4AED2252900F00A444EC /* FirebaseManager.swift */; };
+		A39B62252256283B000FE8F5 /* UserCredentialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B62242256283B000FE8F5 /* UserCredentialController.swift */; };
+		A39B622722563CE4000FE8F5 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B622622563CE4000FE8F5 /* FBManager.swift */; };
 		A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3976F2254D19A00C140C6 /* SignupScreen.swift */; };
 		A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397712254D1DE00C140C6 /* CountryListButton.swift */; };
 		A3A397742254E37A00C140C6 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */; };
@@ -91,6 +93,8 @@
 		A39B4AE52252858400A444EC /* PhoneNumberVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerification.swift; sourceTree = "<group>"; };
 		A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A39B4AED2252900F00A444EC /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		A39B62242256283B000FE8F5 /* UserCredentialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredentialController.swift; sourceTree = "<group>"; };
+		A39B622622563CE4000FE8F5 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		A3A3976F2254D19A00C140C6 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 		A3A397712254D1DE00C140C6 /* CountryListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListButton.swift; sourceTree = "<group>"; };
 		A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 				A39B4ABC224F331E00A444EC /* Info.plist */,
 				A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */,
 				A3A397772255D7D400C140C6 /* PrefixOperator.swift */,
+				A39B62242256283B000FE8F5 /* UserCredentialController.swift */,
+				A39B622622563CE4000FE8F5 /* FBManager.swift */,
 			);
 			path = MentorzSignUpAndLoginFlow;
 			sourceTree = "<group>";
@@ -417,9 +423,11 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -434,9 +442,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30D62032254B85000064CED /* CountryList.swift in Sources */,
+				A39B62252256283B000FE8F5 /* UserCredentialController.swift in Sources */,
 				A39B4AD5225215BC00A444EC /* LoginWithUserResponse.swift in Sources */,
 				A30D61FF2254861800064CED /* MentorzButton.swift in Sources */,
 				A39B4AC7224F3A2300A444EC /* UserManager.swift in Sources */,
@@ -475,6 +486,7 @@
 				A39B4AD72252166D00A444EC /* UserProfileLoginResponse.swift in Sources */,
 				A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */,
 				A3A397702254D19A00C140C6 /* SignupScreen.swift in Sources */,
+				A39B622722563CE4000FE8F5 /* FBManager.swift in Sources */,
 				A39B4AEE2252900F00A444EC /* FirebaseManager.swift in Sources */,
 				A39B4AC5224F374900A444EC /* PhoneNumber.swift in Sources */,
 				A39B4AB6224F331B00A444EC /* MentorzSignUpAndLoginFlow.xcdatamodeld in Sources */,

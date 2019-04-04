@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class OTPScreen: UIViewController {
     
     @IBOutlet weak var firstTxtField: UITextField!
@@ -17,16 +17,20 @@ class OTPScreen: UIViewController {
     @IBOutlet weak var fifthTxtField: UITextField!
     @IBOutlet weak var sixthTxtField: UITextField!
     @IBOutlet weak var verifyOTPbutton: MentorzButton!
-    var firebase : FireBaseManager?
+    var usercredentials:UserCredentialController?
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
     }
     @IBAction func verifyButtonPressed(_ sender: MentorzButton) {
-        firebase?.matchOTP(verificationCode: getVerificationCode(), handler: { (error) -> (Void) in
-            if error == nil{
-                UserManager.shared.registerUser(request: <#T##LoginRequest#>, handler: { (<#Bool#>) -> (Void) in
-                    <#code#>
+        SVProgressHUD.show(withStatus: "Verifing OTP ....")
+        usercredentials?.verifyOTP(code: getVerificationCode(), handler: { (error) in
+            SVProgressHUD.dismiss()
+            if let err = error{
+                SVProgressHUD.showError(withStatus: err.localizedDescription)
+            }else{
+                self.usercredentials?.registerUser(handler: { (result) in
+                    
                 })
             }
         })

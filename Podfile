@@ -10,8 +10,10 @@ pod 'Moya'
 pod 'ObjectMapper', '~> 3.4'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
-pod ‘FLAnimatedImage’
+pod 'FLAnimatedImage'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
+pod 'SVProgressHUD'
+pod 'IQKeyboardManagerSwift'
 end
