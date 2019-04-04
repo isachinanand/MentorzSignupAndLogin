@@ -438,14 +438,17 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="91.304347826086968"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen-->
         <scene sceneID="Yzo-nT-Skq">
             <objects>
-                <viewController storyboardIdentifier="VCVerifyOTP" automaticallyAdjustsScrollViewInsets="NO" id="Krq-cG-PoW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OTPScreen" automaticallyAdjustsScrollViewInsets="NO" id="Krq-cG-PoW" customClass="OTPScreen" customModule="MentorzSignUpAndLoginFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brL-wm-v6X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hOM-Ug-O0z">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-7h-h3d">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
@@ -469,32 +472,32 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Opd-ak-InH">
                                         <rect key="frame" x="74" y="32" width="227" height="50"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="verification code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-3f-27N">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-3f-27N">
                                         <rect key="frame" x="32" y="114" width="311" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label df d f df df d fd g  r  h df g fd r  g f  fg fg df  fdgfd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-xJ-tz3">
-                                        <rect key="frame" x="32" y="142.5" width="311" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The OTP is sent to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-xJ-tz3">
+                                        <rect key="frame" x="32" y="142.5" width="311" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66y-lC-WqL">
-                                        <rect key="frame" x="32" y="191.5" width="311" height="20.5"/>
+                                        <rect key="frame" x="32" y="171" width="311" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-4u-Rey">
-                                        <rect key="frame" x="16" y="228" width="42" height="20.5"/>
+                                        <rect key="frame" x="16" y="207.5" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JYP-ST-tND">
-                                        <rect key="frame" x="16" y="264.5" width="343" height="50.5"/>
+                                        <rect key="frame" x="16" y="244" width="343" height="50.5"/>
                                         <subviews>
                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XL8-vZ-dp1">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.5" height="50.5"/>
@@ -544,24 +547,26 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0R7-sF-cc4">
-                                        <rect key="frame" x="285" y="331" width="74" height="30"/>
-                                        <state key="normal" title="resend otp"/>
-                                        <connections>
-                                            <action selector="resendOtpBtnAction:" destination="Krq-cG-PoW" eventType="touchUpInside" id="Wqc-vl-eAs"/>
-                                        </connections>
+                                        <rect key="frame" x="274" y="310.5" width="85" height="30"/>
+                                        <state key="normal" title="Resend OTP">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-So-ADZ" customClass="MentorzButton" customModule="MentorzSignUpAndLoginFlow" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="417" width="343" height="48"/>
+                                        <rect key="frame" x="16" y="396.5" width="343" height="48"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.20392156862745098" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="Ixv-gl-QjX"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Verify OTP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <action selector="verifyBtnAction:" destination="Krq-cG-PoW" eventType="touchUpInside" id="CLn-su-0If"/>
+                                            <action selector="verifyButtonPressed:" destination="Krq-cG-PoW" eventType="touchUpInside" id="QBU-4J-boW"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="66y-lC-WqL" firstAttribute="leading" secondItem="mxC-7h-h3d" secondAttribute="leading" constant="32" id="1pf-BP-Tev"/>
                                     <constraint firstItem="M4S-7G-noZ" firstAttribute="top" secondItem="mxC-7h-h3d" secondAttribute="top" id="4OZ-OE-noy"/>
@@ -591,28 +596,33 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Jwf-gt-MEL" firstAttribute="trailing" secondItem="hOM-Ug-O0z" secondAttribute="trailing" id="0Jj-3g-GfB"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="trailing" secondItem="Jwf-gt-MEL" secondAttribute="trailing" id="5XA-z6-CP4"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="leading" secondItem="Jwf-gt-MEL" secondAttribute="leading" id="Hw1-Gq-pNf"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="leading" secondItem="Jwf-gt-MEL" secondAttribute="leading" id="MzP-LD-Rtw"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="bottom" secondItem="Jwf-gt-MEL" secondAttribute="bottom" id="NBF-0f-Aob"/>
+                            <constraint firstItem="hOM-Ug-O0z" firstAttribute="leading" secondItem="Jwf-gt-MEL" secondAttribute="leading" id="NLX-vF-dW7"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="bottom" secondItem="Jwf-gt-MEL" secondAttribute="bottom" id="PZo-oL-9r6"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="top" secondItem="Jwf-gt-MEL" secondAttribute="top" id="U7o-zo-TGF"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="top" secondItem="Jwf-gt-MEL" secondAttribute="top" id="W3d-Ty-bt3"/>
+                            <constraint firstItem="Jwf-gt-MEL" firstAttribute="bottom" secondItem="hOM-Ug-O0z" secondAttribute="bottom" id="gIc-Yn-DKL"/>
                             <constraint firstItem="mxC-7h-h3d" firstAttribute="trailing" secondItem="Jwf-gt-MEL" secondAttribute="trailing" id="rfm-4J-c85"/>
+                            <constraint firstItem="hOM-Ug-O0z" firstAttribute="top" secondItem="Jwf-gt-MEL" secondAttribute="top" id="rnz-ya-P7C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jwf-gt-MEL"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="M4S-7G-noZ" id="c6P-mj-E0i"/>
-                        <outlet property="codeLabel" destination="0sS-4u-Rey" id="8r6-TC-IMH"/>
                         <outlet property="contentView" destination="mxC-7h-h3d" id="BfH-oI-QOG"/>
+                        <outlet property="fifthTxtField" destination="bBj-Tm-XM2" id="vMD-GA-0DR"/>
+                        <outlet property="firstTxtField" destination="XL8-vZ-dp1" id="gEc-1T-Q9o"/>
+                        <outlet property="fourthTxtField" destination="oLa-tg-yPW" id="Y5j-wa-m9l"/>
                         <outlet property="numberLabel" destination="66y-lC-WqL" id="tsY-95-kzG"/>
-                        <outlet property="resendOtpBtn" destination="0R7-sF-cc4" id="F8z-bS-9VY"/>
-                        <outlet property="textFieldFive" destination="bBj-Tm-XM2" id="u98-rt-uca"/>
-                        <outlet property="textfieldSix" destination="4xA-lS-R5j" id="gh6-4s-5FZ"/>
-                        <outlet property="verifyBtn" destination="lCl-So-ADZ" id="Clw-hg-06Q"/>
+                        <outlet property="secondTxtField" destination="uAO-GG-V9F" id="t2d-db-TXJ"/>
+                        <outlet property="sixthTxtField" destination="4xA-lS-R5j" id="Twz-TE-FA9"/>
+                        <outlet property="thirdTxtField" destination="zKs-gP-ZQ6" id="veY-QV-pIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CoU-xQ-eTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
