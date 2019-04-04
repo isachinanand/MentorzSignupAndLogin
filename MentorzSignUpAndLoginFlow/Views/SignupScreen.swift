@@ -9,11 +9,13 @@
 import UIKit
 
 class SignupScreen: UIViewController,countryCodeDelegate {
-    func getcountryCode(code: String) {
-        self.Code.setTitle("+"+code, for: .normal)
-        req.phoneNumber?.cc = code
+    func getcountryCode(code: Country) {
+        self.Code.setTitle("+" + /code.countryCode, for: .normal)
+        req.phoneNumber?.cc = code.countryCode
+        req.phoneNumber?.isoAlpha2Cc = code.iso
     }
     let req = LoginRequest()
+    let firebase = FireBaseManager()
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -24,6 +26,7 @@ class SignupScreen: UIViewController,countryCodeDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        Code.setTitle("+1", for: .normal)
+        req.phoneNumber = PhoneNumber(cc: "1", iso: "in", number: "0")
         // Do any additional setup after loading the view.
     }
     
@@ -43,6 +46,10 @@ class SignupScreen: UIViewController,countryCodeDelegate {
         req.userProfile?.name = nameField.text
         req.phoneNumber?.number = phoneField.text
         req.password = passwordField.text
+        firebase.verifyPhone(phoneNumber: /req.phoneNumber) { (isOTPsent) -> (Void) in
+            
+        }
+        
     }
     
     

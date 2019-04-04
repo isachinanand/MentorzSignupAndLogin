@@ -9,11 +9,19 @@
 import UIKit
 
 class LoginScreen: UIViewController,countryCodeDelegate {
-    func getcountryCode(code: String) {
-         self.code.setTitle("+"+code, for: .normal)
+    func getcountryCode(code: Country) {
+        self.code.setTitle("+" + /code.countryCode, for: .normal)
+        req.phoneNumber?.cc = code.countryCode
+        req.phoneNumber?.isoAlpha2Cc = code.iso
     }
     
-
+    
+    let req = LoginRequest()
+    
+    @IBOutlet weak var phoneField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var code: CountryListButton!
     @IBAction func countryCodePressed(_ sender: CountryListButton) {
         let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryList") as! CountryList
@@ -38,6 +46,15 @@ class LoginScreen: UIViewController,countryCodeDelegate {
        
     }
     
-
+    @IBAction func loginButtonPressed(_ sender: MentorzButton) {
+        req.phoneNumber?.number = phoneField.text
+        req.email_id = emailField.text ?? ""
+        req.password = passwordField.text
+        UserManager.shared.loginUser(request: req) { (statuscode, newuser) -> (Void) in
+            
+        }
+        
+    }
+    
    
 }

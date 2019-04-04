@@ -9,36 +9,23 @@
 import Foundation
 import FirebaseAuth
 class FireBaseManager {
-    var verificationId = ""
-    func verifyPhone(phoneNumber:PhoneNumber){
-        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber.getPhoneNumberInString(), uiDelegate: nil) { (verificationID, error) in
-            if let error = error {
-               print("\(error.localizedDescription)")
-                return
-            }
-            // Sign in using the verificationID and the code sent to the user
-            // ...
-        
+    private var verificationId = ""
     
-    self.verificationId = UserDefaults.standard.string(forKey: "authVerificationID") ?? ""
-}
-}
-
-func matchOTP(verificationCode:String)->Bool
-{
-    let credential = PhoneAuthProvider.provider().credential(
-        withVerificationID: verificationId,
-        verificationCode: verificationCode)
-    Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
-        if let error = error {
-            print("\(error.localizedDescription)")
-            return
+    func verifyPhone(phoneNumber:PhoneNumber,handler: @escaping((Error?)->(Void))){
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber.getPhoneNumberInString(), uiDelegate: nil) { (verificationID, error) in
+            self.verificationId = /verificationID
+            handler(error)
         }
-        // User is signed in
-        // ...
     }
     
-   return true
-}
+    func matchOTP(verificationCode:String,handler: @escaping((Error?)->(Void)))
+    {
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: verificationId,
+            verificationCode: verificationCode)
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            handler(error)
+        }
+    }
     
 }

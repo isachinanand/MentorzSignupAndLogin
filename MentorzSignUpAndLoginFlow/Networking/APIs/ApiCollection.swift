@@ -33,7 +33,7 @@ enum apiVersion:String{
 extension ApiCollection:TargetType {
     
     var baseURL: URL {
-        return URL(string: getBaseUrl())!
+        return /URL(string: getBaseUrl())
     }
     
     var path: String {

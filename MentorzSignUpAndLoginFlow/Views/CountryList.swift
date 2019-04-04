@@ -18,8 +18,7 @@ class Country {
     }
 }
 protocol countryCodeDelegate{
-    func getcountryCode(code: String)
-  //  var countryCode: String {get set}
+    func getcountryCode(code: Country)
 }
 class CountryList: UIViewController,XMLParserDelegate,UITableViewDelegate,UITableViewDataSource {
     var countries = [Country]()
@@ -41,7 +40,7 @@ class CountryList: UIViewController,XMLParserDelegate,UITableViewDelegate,UITabl
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegateCode?.getcountryCode(code: countries[indexPath.row].countryCode ?? "")
+        delegateCode?.getcountryCode(code: countries[indexPath.row])
         self.dismiss(animated: true, completion: nil)
         
     }

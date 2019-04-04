@@ -16,8 +16,6 @@ class ViewController: UIViewController {
         let req = LoginRequest()
         let firManager = FireBaseManager()
         req.phoneNumber = PhoneNumber(cc: "91", iso: "in", number: "9501975529")
-       // firManager.verifyPhone(phoneNumber: req.phoneNumber!)
-        let isOTPmatched:Bool = firManager.matchOTP(verificationCode: "123456")
         
         req.password = "qwerty"
         req.deviceInfo = DeviceInfo(deviceToken: "123456789", deviceType: "ios")

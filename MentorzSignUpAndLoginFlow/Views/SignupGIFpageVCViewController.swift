@@ -28,7 +28,7 @@ class SignupGIFpageVCViewController: UIViewController {
     }
     func makeGIF(){
         let path = Bundle.main.path(forResource: "onBoardVideo", ofType: "gif")
-        let url = URL(fileURLWithPath: path!)
+        let url = URL(fileURLWithPath: /path)
         let gifData = try? Data(contentsOf: url)
         let imageData1 = try? FLAnimatedImage(animatedGIFData: gifData)
         myGIF.animatedImage = imageData1 as! FLAnimatedImage

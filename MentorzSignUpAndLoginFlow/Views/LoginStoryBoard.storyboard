@@ -23,9 +23,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DVB-Sh-rue">
                                 <rect key="frame" x="74" y="80" width="227" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="h1X-5p-faP"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Via" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRB-Sb-xw1">
                                 <rect key="frame" x="152" y="138" width="71" height="21"/>
@@ -106,9 +103,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="db3-vl-IUe"/>
                                 </constraints>
-                                <state key="normal" title="Signup">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="vxe-U7-NNg" eventType="touchUpInside" id="5jc-Id-zsm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-y1-lPM">
                                 <rect key="frame" x="90" y="522" width="195" height="30"/>
@@ -174,7 +174,9 @@
                             <constraint firstItem="M99-jD-6JL" firstAttribute="trailing" secondItem="qnr-ut-V9t" secondAttribute="trailing" id="4e6-hp-1qh"/>
                             <constraint firstItem="OWU-9O-BBg" firstAttribute="leading" secondItem="M99-jD-6JL" secondAttribute="leading" constant="16" id="4qL-Nc-WbH"/>
                             <constraint firstItem="DVB-Sh-rue" firstAttribute="centerX" secondItem="Nlk-gJ-DW1" secondAttribute="centerX" id="7Qw-Te-rfh"/>
+                            <constraint firstItem="M99-jD-6JL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DVB-Sh-rue" secondAttribute="trailing" constant="32" id="9Xj-2I-blX"/>
                             <constraint firstItem="Ool-Kp-JCp" firstAttribute="top" secondItem="RE1-y1-lPM" secondAttribute="bottom" constant="16" id="AZ4-FX-3lX"/>
+                            <constraint firstItem="DVB-Sh-rue" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M99-jD-6JL" secondAttribute="leading" constant="32" id="Ale-6a-F6h"/>
                             <constraint firstItem="Ool-Kp-JCp" firstAttribute="centerX" secondItem="Nlk-gJ-DW1" secondAttribute="centerX" id="Bne-oa-Szr"/>
                             <constraint firstItem="oHC-3e-PEv" firstAttribute="top" secondItem="cM2-rA-3YV" secondAttribute="bottom" constant="16" id="FNN-hB-yGo"/>
                             <constraint firstItem="Ghp-QF-0PX" firstAttribute="top" secondItem="OWU-9O-BBg" secondAttribute="bottom" constant="16" id="Hen-8f-UVq"/>
@@ -211,6 +213,9 @@
                     </view>
                     <connections>
                         <outlet property="code" destination="oHC-3e-PEv" id="jvj-c2-LtE"/>
+                        <outlet property="emailField" destination="Nw4-7A-a30" id="oNS-ET-5gF"/>
+                        <outlet property="passwordField" destination="OWU-9O-BBg" id="JGe-fy-nRW"/>
+                        <outlet property="phoneField" destination="DC4-wl-hZn" id="l1Q-7q-8Ft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9AE-N7-jPL" userLabel="First Responder" sceneMemberID="firstResponder"/>

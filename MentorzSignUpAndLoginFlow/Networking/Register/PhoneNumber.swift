@@ -14,7 +14,7 @@ import Foundation
 import ObjectMapper
 
 
-class PhoneNumber : NSObject, Mappable{
+public class PhoneNumber : NSObject, Mappable{
     
     var cc : String?
     var isoAlpha2Cc : String?
@@ -26,7 +26,7 @@ class PhoneNumber : NSObject, Mappable{
         super.init()
     }
     
-    required  init?(map: Map) {
+    required  public init?(map: Map) {
         
     }
     convenience init(cc:String,iso:String,number:String) {
@@ -35,7 +35,7 @@ class PhoneNumber : NSObject, Mappable{
         self.isoAlpha2Cc = iso
         self.number = number
     }
-    func mapping(map: Map)
+    public func mapping(map: Map)
     {
         cc <- map["cc"]
         isoAlpha2Cc <- map["iso_alpha_2_cc"]
@@ -43,7 +43,7 @@ class PhoneNumber : NSObject, Mappable{
         
     }
     func getPhoneNumberInString ()->String {
-        return "+\(cc ?? "")"+"\( number ?? "")"
+        return "+\(/cc)"+"\( /number)"
     }
     
 }

@@ -47,6 +47,7 @@
 		A3A397722254D1DE00C140C6 /* CountryListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397712254D1DE00C140C6 /* CountryListButton.swift */; };
 		A3A397742254E37A00C140C6 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */; };
 		A3A397762254EC6F00C140C6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397752254EC6F00C140C6 /* LoginScreen.swift */; };
+		A3A397782255D7D400C140C6 /* PrefixOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A397772255D7D400C140C6 /* PrefixOperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		A3A397712254D1DE00C140C6 /* CountryListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListButton.swift; sourceTree = "<group>"; };
 		A3A397732254E37A00C140C6 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
 		A3A397752254EC6F00C140C6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		A3A397772255D7D400C140C6 /* PrefixOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixOperator.swift; sourceTree = "<group>"; };
 		A49857DDE2FA363BA8877374 /* Pods-MentorzSignUpAndLoginFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzSignUpAndLoginFlow/Pods-MentorzSignUpAndLoginFlow.release.xcconfig"; sourceTree = "<group>"; };
 		B92244AA7184697282B7E00F /* Pods_MentorzSignUpAndLoginFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzSignUpAndLoginFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -243,6 +245,7 @@
 				A30D61B822538C4500064CED /* Views */,
 				A39B4ABC224F331E00A444EC /* Info.plist */,
 				A39B4AEB22528EF500A444EC /* GoogleService-Info.plist */,
+				A3A397772255D7D400C140C6 /* PrefixOperator.swift */,
 			);
 			path = MentorzSignUpAndLoginFlow;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				A30D62062254B89600064CED /* CountryCell.swift in Sources */,
 				A39B4ACB224F595B00A444EC /* RegistrationManager.swift in Sources */,
 				A39B4AD32251ECA800A444EC /* LoginRequest.swift in Sources */,
+				A3A397782255D7D400C140C6 /* PrefixOperator.swift in Sources */,
 				A39B4AB0224F331B00A444EC /* ViewController.swift in Sources */,
 				A39B4AE122522A1E00A444EC /* User.swift in Sources */,
 				A39B4AD12251EBC000A444EC /* DeviceInfo.swift in Sources */,

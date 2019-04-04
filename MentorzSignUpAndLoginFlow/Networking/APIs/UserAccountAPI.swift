@@ -14,7 +14,7 @@ enum UserAccountApiCollection{
 }
 extension UserAccountApiCollection:TargetType {
     var baseURL: URL {
-        return URL(string:getBaseUrl())!
+        return /URL(string:getBaseUrl())
     }
     
     var path: String {
