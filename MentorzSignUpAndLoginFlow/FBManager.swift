@@ -47,4 +47,7 @@ class FBManager{
             }
         }
     }
+    func register(onViewController:UIViewController,handler: @escaping ((FBProfile?,Error?)->(Void))) {
+        
+    }
 }

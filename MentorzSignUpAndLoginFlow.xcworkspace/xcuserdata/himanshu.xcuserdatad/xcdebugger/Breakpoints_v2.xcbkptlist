@@ -90,7 +90,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/Login/LoginManager.swift"
-                  timestampString = "576140869.406297"
+                  timestampString = "576143752.405952"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -105,7 +105,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/Login/LoginManager.swift"
-                  timestampString = "576140869.410085"
+                  timestampString = "576143752.410526"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -113,6 +113,22 @@
                   offsetFromSymbolStart = "86">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/FBManager.swift"
+            timestampString = "576143752.10519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "login(onViewController:handler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

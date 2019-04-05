@@ -30,7 +30,16 @@ class OTPScreen: UIViewController {
             if let err = error{
                 SVProgressHUD.showError(withStatus: err.localizedDescription)
             }else{
-                self.usercredentials?.registerUser(handler: { (result) in
+                self.usercredentials?.registerUser(handler: { (result,statuscode) in
+                    if (result) {
+                        SVProgressHUD.showSuccess(withStatus: "Successfully Signed up, Please Login")
+                    }else if (statuscode==400){
+                        SVProgressHUD.showError(withStatus: "Bad Request")
+                    }else if (statuscode==500){
+                        SVProgressHUD.showError(withStatus: "Internal Server Error")
+                    }else if (statuscode==409){
+                        SVProgressHUD.showError(withStatus: "Account already exists")
+                    }
                     
                 })
             }

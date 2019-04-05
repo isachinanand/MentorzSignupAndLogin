@@ -16,4 +16,5 @@ pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
 pod 'SVProgressHUD'
 pod 'IQKeyboardManagerSwift'
+pod 'LinkedinSwift', '~> 1.7.7'
 end

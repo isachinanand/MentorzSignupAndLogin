@@ -15,7 +15,7 @@ class UserCredentialController: NSObject {
     override init() {
         request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
         request.phoneNumber = PhoneNumber()
-        //request.userProfile = UserProfile()
+        request.userProfile? = UserProfile()
     }
     var name:String?{
         get{
@@ -60,14 +60,14 @@ class UserCredentialController: NSObject {
             handler(error)
         }
     }
-    func registerUser(handler: @escaping ((Bool)->())){
+    func registerUser(handler: @escaping ((Bool,Int)->())){
         if request.socialId == nil{
             RegistrationManager.init().registerUserWithPhone(user: request) { (statusCode) -> (Void) in
-                handler(statusCode == 201)
+                handler(statusCode == 201,statusCode)
             }
         }else{
             RegistrationManager.init().registerUserWithSocial(user: request) { (statuscode) -> (Void) in
-                handler(statuscode == 201)
+                handler(statuscode == 201,statuscode)
             }
         }
     }
