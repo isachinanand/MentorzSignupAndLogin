@@ -22,20 +22,18 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gxP-FN-1M7">
-                                <rect key="frame" x="65" y="268" width="245" height="131"/>
+                                <rect key="frame" x="89" y="233" width="197" height="201"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="gxP-FN-1M7" secondAttribute="height" multiplier="15:8" id="ESR-b3-BLf"/>
+                                    <constraint firstAttribute="width" secondItem="gxP-FN-1M7" secondAttribute="height" multiplier="197:201" id="2vc-zD-mCQ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uDu-Ra-zWI" secondAttribute="bottom" id="25A-gm-aw1"/>
-                            <constraint firstItem="gxP-FN-1M7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5sh-LI-REE"/>
                             <constraint firstItem="uDu-Ra-zWI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ESo-fv-cEc"/>
-                            <constraint firstItem="gxP-FN-1M7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="I00-sq-VXa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gxP-FN-1M7" secondAttribute="trailing" constant="65" id="WYO-uD-KZG"/>
-                            <constraint firstItem="gxP-FN-1M7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="f50-SK-51Y"/>
+                            <constraint firstItem="gxP-FN-1M7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TS5-O8-vcK"/>
+                            <constraint firstItem="gxP-FN-1M7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bi9-GS-rdQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uDu-Ra-zWI" secondAttribute="trailing" id="kYF-rE-Zxa"/>
                             <constraint firstItem="uDu-Ra-zWI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lMR-n0-izO"/>
                         </constraints>

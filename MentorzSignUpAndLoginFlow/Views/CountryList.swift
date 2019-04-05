@@ -7,101 +7,250 @@
 //
 
 import UIKit
-class Country {
-    var countryCode : String?
-    var iso : String?
-    var countryName : String?
-    init (countryCode:String,iso:String,countryName:String){
-        self.countryCode = countryCode
-        self.iso = iso
-        self.countryName = countryName
-    }
-}
-protocol countryCodeDelegate{
-    func getcountryCode(code: Country)
-}
-class CountryList: UIViewController,XMLParserDelegate,UITableViewDelegate,UITableViewDataSource {
-    var countries = [Country]()
-    var elementName: String = String()
-    var countryCode = String()
-    var iso = String()
-    var countryName = String()
-    var delegateCode : countryCodeDelegate?
-    
-    @IBOutlet weak var countrylist: UITableView!
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return countries.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CountryCell
-        cell.countryCode?.text = "+"+countries[indexPath.row].countryCode!
-        cell.countryName?.text = countries[indexPath.row].countryName
-        return cell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegateCode?.getcountryCode(code: countries[indexPath.row])
-        self.dismiss(animated: true, completion: nil)
-        
-    }
-    
 
+protocol CountryCodeDelegate {
+    func didSelectCountryCode(country:Country)
+}
+class CountryCodeVC: UIViewController {
+    //MARK: outlets
+    @IBOutlet weak var countryTable: UITableView!
+    var delegate:CountryCodeDelegate?
+    var selectedCountryCode:String?
+    
+    fileprivate var tableManagementArray = Array<Country>()
+    fileprivate var filteredTableManagementArray = Array<Country>()
+    fileprivate var isFiltered:Bool = false
+    fileprivate var country:Country?
+    fileprivate var searchBar = UISearchBar()
+    fileprivate let searchBarHeight:CGFloat = 50.0
+    fileprivate let tableCellHeight : CGFloat = 44.0
+    
+    
+    //MARK: ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let path = Bundle.main.url(forResource: "countries", withExtension: "xml") {
-            if let parser = XMLParser(contentsOf: path) {
-                parser.delegate = self
-                parser.parse()
-                countrylist.register(UINib(nibName: "CountryCell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
-                countrylist.delegate = self
-                countrylist.dataSource = self
+        self.setUpView()
+        self.beginXMLParsingForCountriesCode()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    //MARK: setUpView
+    func setUpView(){
+      //  self.searchBar.barTintColor = UIColor.app_blue_Color
+        setUpTableView()
+     //   setUpNavigationBar(title:"CHOOSE A COUNTRY".localized)
+    }
+    
+    func setUpTableView() {
+        countryTable.delegate = self
+        countryTable.dataSource = self
+        countryTable.separatorStyle = .none
+    }
+    
+    func beginXMLParsingForCountriesCode(){
+        
+        guard let path = Bundle.main.url(forResource: XML.countries, withExtension: XML.fileExtension) else{
+            return
+        }
+        
+        if let parser = XMLParser(contentsOf: path) {
+            parser.delegate = self
+            parser.parse()
+            
+            self.countryTable.reloadData()
+        }
+        
+        
+    }
+    
+    
+    func setUpNavigationBar(title:String) {
+        self.title = title;
+       // self.navigationController?.navigationBar.backgroundColor = UIColor.app_blue_Color
+        self.navigationController?.navigationBar.isTranslucent = false
+        let image = UIImage(imageLiteralResourceName: "back_icon")
+        let leftButton: UIBarButtonItem = UIBarButtonItem(image:image, style: UIBarButtonItem.Style.plain, target: self, action: #selector(backButtonClicked))
+        navigationItem.leftBarButtonItem = leftButton
+        
+    }
+    
+    
+    
+    //MARK: CickAction
+    @objc func backButtonClicked() {
+        
+        self.dismiss(animated: true, completion: nil);
+    }
+    
+    
+    //MARK: Custom method
+    
+    func isPreviouslySelectedCountryCode(code:String) -> Bool{
+        
+        return code == selectedCountryCode
+    }
+    
+    
+}
+
+
+
+//MARK: UITableViewDelegate
+extension CountryCodeVC:UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.view.endEditing(true)
+        
+        let countryCellData:Country = isFiltered ? filteredTableManagementArray[indexPath.row] :tableManagementArray[indexPath.row]
+        
+        self.delegate?.didSelectCountryCode(country: countryCellData)
+        self.dismiss(animated: true, completion: nil);
+        
+    }
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return tableCellHeight;
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        searchBar.frame = CGRect.init(x:0, y: 0, width: countryTable.frame.size.width, height: searchBarHeight)
+        searchBar.delegate = self;
+        searchBar.enablesReturnKeyAutomatically = false;
+        searchBar.returnKeyType = .done
+        
+        return searchBar;
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return searchBarHeight;
+    }
+    
+    
+    
+}
+
+
+//MARK: UITableViewDataSource
+extension CountryCodeVC:UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return isFiltered ? filteredTableManagementArray.count : tableManagementArray.count
+        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let countryCellData:Country = isFiltered ? filteredTableManagementArray[indexPath.row] : tableManagementArray[indexPath.row];
+        
+        
+        let cell = countryTable.dequeueReusableCell(withIdentifier: "CountryCodeCell", for: indexPath) as! CountryCodeTVC
+        
+        cell.setData(countryCellData)
+        
+        return cell;
+    }
+    
+}
+
+
+//MARK: UISearchBarDelegate
+extension CountryCodeVC:UISearchBarDelegate {
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+        
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText.count == 0{
+            isFiltered = false
+        }
+            
+        else{
+            isFiltered = true
+            filteredTableManagementArray.removeAll()
+            
+            
+            let filter =  tableManagementArray.filter{
+                let nameRange =  ($0.name!.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil));
+                let codeRange = $0.code!.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil);
+                return nameRange != nil || codeRange != nil
+                
             }
-        }
-    }
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-        
-        if elementName == "country" {
-            countryName = attributeDict["name"] ?? "xxx"
-            iso = attributeDict["code"] ?? "xxx"
-            countryCode = attributeDict["phoneCode"] ?? "xxx"
+            filteredTableManagementArray.append(contentsOf: filter)
         }
         
-        self.elementName = elementName
+        
+        self.countryTable.reloadData();
     }
     
-    // 2
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "country" {
-            let country = Country(countryCode: countryCode, iso: iso, countryName: countryName)
-            countries.append(country)
-        }
-    }
     
-    // 3
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    
+}
+
+
+//MARK: XMLParserDelegate
+extension CountryCodeVC:XMLParserDelegate{
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
-        if (!data.isEmpty) {
-            if self.elementName == "countryCode" {
-                countryCode += data
-            } else if self.elementName == "iso" {
-                iso += data
-            }else if self.elementName == "countryName" {
-                countryName += data
+        if elementName == XML.Tag.country{
+            
+            let phoneCode:String? = "+\(attributeDict[XML.Tag.Attribute.phoneCode]!)"
+            country = Country(name: attributeDict[XML.Tag.Attribute.name]!, code:phoneCode!)
+            
+            if isPreviouslySelectedCountryCode(code: phoneCode!) {
+                country?.isSelected = true;
             }
+            
+        }
+        
+    }
+    
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String){
+        
+        
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?){
+        
+        if elementName == XML.Tag.country{
+            
+            self.tableManagementArray.append(country!)
+            country = nil
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -10,15 +10,17 @@ import UIKit
 import FBSDKLoginKit
 import SVProgressHUD
 
-class LoginScreen: UIViewController,countryCodeDelegate {
-    
-    func getcountryCode(code: Country) {
-        self.code.setTitle("+" + /code.countryCode, for: .normal)
+class LoginScreen: UIViewController,CountryCodeDelegate {
+    func didSelectCountryCode(country: Country) {
+        self.code.setTitle("+" + /country.code, for: .normal)
         let phone = /usercredentials.phonenumber
-        phone.cc  = code.countryCode
-        phone.isoAlpha2Cc = code.iso
+        phone.cc  = country.code
+        phone.isoAlpha2Cc = ""
         self.usercredentials.phonenumber = phone
     }
+    
+    
+    
     
     private var usercredentials : UserCredentialController  = UserCredentialController()
     @IBOutlet weak var phoneField: UITextField!
@@ -27,8 +29,8 @@ class LoginScreen: UIViewController,countryCodeDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var code: CountryListButton!
     @IBAction func countryCodePressed(_ sender: CountryListButton) {
-        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryList") as! CountryList
-        vc.delegateCode = self
+        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryCodeVC") as! CountryCodeVC
+        vc.delegate = self
         self.present(vc, animated: true, completion: nil)
     }
     

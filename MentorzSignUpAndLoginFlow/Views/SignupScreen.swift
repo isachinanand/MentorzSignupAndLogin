@@ -8,7 +8,15 @@
 
 import UIKit
 import SVProgressHUD
-class SignupScreen: UIViewController,countryCodeDelegate {
+class SignupScreen: UIViewController,CountryCodeDelegate {
+    func didSelectCountryCode(country: Country) {
+        self.Code.setTitle("+" + /country.code, for: .normal)
+        let phone = /usercredentials?.phonenumber
+        phone.cc  = country.code
+        phone.isoAlpha2Cc = ""
+        self.usercredentials?.phonenumber = phone
+    }
+    
    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
@@ -26,8 +34,8 @@ class SignupScreen: UIViewController,countryCodeDelegate {
     }
     
     @IBAction func countryCodeButtonPressed(_ sender: CountryListButton) {
-        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryList") as! CountryList
-        vc.delegateCode = self
+        let vc = UIStoryboard.init(name: "Signup", bundle: Bundle.main).instantiateViewController(withIdentifier: "CountryCodeVC") as! CountryCodeVC
+        vc.delegate = self
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -50,13 +58,7 @@ class SignupScreen: UIViewController,countryCodeDelegate {
             }
         })
     }
-    func getcountryCode(code: Country) {
-        self.Code.setTitle("+" + /code.countryCode, for: .normal)
-        let phone = /usercredentials?.phonenumber
-        phone.cc  = code.countryCode
-        phone.isoAlpha2Cc = code.iso
-        self.usercredentials?.phonenumber = phone
-    }
+    
     
 }
 extension SignupScreen:UITextFieldDelegate{
