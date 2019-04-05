@@ -64,6 +64,18 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
     }
     
     @IBAction func linkedinLoginPressed(_ sender: MentorzButton) {
+        LinkedinManager.init().loginLinkedin { (error) -> (Void) in
+            if let err = error {
+                SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
+            } else {
+                LinkedinManager.init().fetchProfile(handler: { (error) -> (Void) in
+                    if let err = error {
+                        SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
+                    }
+                })
+            }
+        }
+
     }
     
     @IBAction func loginButtonPressed(_ sender: MentorzButton) {
