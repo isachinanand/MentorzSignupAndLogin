@@ -22,7 +22,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
     
     
     
-    private var usercredentials : UserCredentialController  = UserCredentialController()
+    private var usercredentials : UserCredentialController  = UserCredentialController.init(isLogin: true)
     @IBOutlet weak var phoneField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!

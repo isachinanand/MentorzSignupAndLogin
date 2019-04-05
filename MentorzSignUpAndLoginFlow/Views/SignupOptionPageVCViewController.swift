@@ -9,7 +9,7 @@
 import UIKit
 
 class SignupOptionPageVCViewController: UIViewController {
-   private var usercredentialController:UserCredentialController = UserCredentialController()
+   private var usercredentialController:UserCredentialController = UserCredentialController.init(isRegistration: true)
     override func viewDidLoad() {
         super.viewDidLoad()
 

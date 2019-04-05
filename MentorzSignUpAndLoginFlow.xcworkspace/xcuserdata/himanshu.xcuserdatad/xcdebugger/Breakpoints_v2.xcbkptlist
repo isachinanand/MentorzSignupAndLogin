@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MentorzSignUpAndLoginFlow/Networking/Register/RegistrationManager.swift"
-            timestampString = "576075649.55432"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "registerUserWithPhone(user:handler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/Networking/Login/LoginManager.swift"
             timestampString = "576141744.118844"
             startingColumnNumber = "9223372036854775807"
@@ -90,7 +74,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/Login/LoginManager.swift"
-                  timestampString = "576143752.405952"
+                  timestampString = "576155527.29003"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -105,7 +89,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Networking/Login/LoginManager.swift"
-                  timestampString = "576143752.410526"
+                  timestampString = "576155527.294227"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
@@ -122,12 +106,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/FBManager.swift"
-            timestampString = "576143752.10519"
+            timestampString = "576157467.982298"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "login(onViewController:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
+            timestampString = "576157467.983052"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "verifyButtonPressed(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MentorzSignUpAndLoginFlow.OTPScreen.verifyButtonPressed(MentorzSignUpAndLoginFlow.MentorzButton) -&gt; ()"
+                  moduleName = "MentorzSignUpAndLoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
+                  timestampString = "576155527.314986"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "411">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Int) -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MentorzSignUpAndLoginFlow.OTPScreen.verifyButtonPressed(MentorzSignUpAndLoginFlow.MentorzButton) -&gt; ()"
+                  moduleName = "MentorzSignUpAndLoginFlow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
+                  timestampString = "576155527.318861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
+            timestampString = "576157467.9835629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "verifyButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

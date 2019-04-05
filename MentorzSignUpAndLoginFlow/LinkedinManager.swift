@@ -13,11 +13,11 @@ class LinkedinManager {
    let linkedinHelper = LinkedinSwiftHelper.init(configuration: LinkedinSwiftConfiguration.init(clientId: "77tn2ar7gq6lgv", clientSecret: "iqkDGYpWdhf7WKzA", state: "DLKDJF45DIWOERCM", permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: nil))
     func loginLinkedin(handler:@escaping ((Error?)->(Void))){
         linkedinHelper.authorizeSuccess({ (liToken) in
-            <#code#>
+            
         }, error: { (error) in
             handler(error)
         }) {
-            <#code#>
+            
         }
 }
     func fetchProfile(handler:@escaping ((Error?)->(Void))){

@@ -12,10 +12,23 @@ class UserCredentialController: NSObject {
     private var firebaseManager = FireBaseManager()
     private var request = LoginRequest()
     private var loginManager = LoginManager()
-    override init() {
-        request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
-        request.phoneNumber = PhoneNumber()
-        request.userProfile? = UserProfile()
+    override private init() {
+        super.init()
+        
+    
+    }
+    convenience init(isRegistration:Bool){
+        self.init()
+        self.request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
+        self.request.phoneNumber = PhoneNumber()
+        self.request.userProfile = UserProfile()
+        
+    }
+    convenience init(isLogin:Bool){
+        self.init()
+        self.request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
+        self.request.phoneNumber = PhoneNumber()
+        
     }
     var name:String?{
         get{
