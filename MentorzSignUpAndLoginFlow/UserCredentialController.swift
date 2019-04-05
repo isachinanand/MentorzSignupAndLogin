@@ -15,7 +15,7 @@ class UserCredentialController: NSObject {
     override init() {
         request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
         request.phoneNumber = PhoneNumber()
-        request.userProfile = UserProfile()
+        //request.userProfile = UserProfile()
     }
     var name:String?{
         get{
@@ -38,7 +38,7 @@ class UserCredentialController: NSObject {
             return request.email_id
         }
         set{
-            request.email_id = newValue
+            request.email_id = /newValue
         }
     }
     var phonenumber:PhoneNumber?{

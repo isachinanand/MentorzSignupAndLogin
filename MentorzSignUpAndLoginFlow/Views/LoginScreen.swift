@@ -70,8 +70,8 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
         SVProgressHUD.show(withStatus: "Logging In")
         self.usercredentials.loginUser { (statusCode, newuser) in
             SVProgressHUD.dismiss()
-            if let user = newuser{
-                print(user)
+            if (statusCode==200){
+                print("The Status Code is \(statusCode)")
                 let vc = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "AfterLoginScreen") as! AfterLoginScreen
                 self.navigationController?.pushViewController(vc, animated: true)
             } else if(statusCode==400){
@@ -92,7 +92,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
 extension LoginScreen:UITextFieldDelegate{
     @objc func textFieldDidChange(_ textField: UITextField) {
         if textField == emailField{
-            self.usercredentials.email = textField.text
+            self.usercredentials.email = /textField.text
         }else if textField == phoneField{
             self.usercredentials.phonenumber?.number = textField.text
         }else if textField == passwordField{
