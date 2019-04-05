@@ -236,8 +236,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heloooooooooooo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZq-Da-WsH">
-                                <rect key="frame" x="166" y="323" width="142" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello !!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZq-Da-WsH">
+                                <rect key="frame" x="116" y="111" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSJ-pM-ZFq">
+                                <rect key="frame" x="32" y="200" width="311" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="has just logged in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08y-ml-pYe">
+                                <rect key="frame" x="32" y="251" width="311" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -245,11 +257,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VZq-Da-WsH" firstAttribute="centerY" secondItem="ud5-Rf-P9G" secondAttribute="centerY" id="mhN-iE-fc1"/>
-                            <constraint firstItem="VZq-Da-WsH" firstAttribute="leading" secondItem="AGu-Hy-U7l" secondAttribute="leading" constant="166" id="rpI-jT-ZId"/>
+                            <constraint firstItem="VSJ-pM-ZFq" firstAttribute="leading" secondItem="AGu-Hy-U7l" secondAttribute="leading" constant="32" id="02c-j7-YSv"/>
+                            <constraint firstItem="AGu-Hy-U7l" firstAttribute="trailing" secondItem="08y-ml-pYe" secondAttribute="trailing" constant="32" id="0DX-Sh-hU1"/>
+                            <constraint firstItem="VZq-Da-WsH" firstAttribute="top" secondItem="AGu-Hy-U7l" secondAttribute="top" constant="91" id="Db0-ls-6eG"/>
+                            <constraint firstItem="AGu-Hy-U7l" firstAttribute="trailing" secondItem="VSJ-pM-ZFq" secondAttribute="trailing" constant="32" id="FfF-Gv-Pbe"/>
+                            <constraint firstItem="VZq-Da-WsH" firstAttribute="leading" secondItem="AGu-Hy-U7l" secondAttribute="leading" constant="116" id="V03-jf-HKn"/>
+                            <constraint firstItem="VSJ-pM-ZFq" firstAttribute="centerX" secondItem="ud5-Rf-P9G" secondAttribute="centerX" id="Xjd-Wh-nYj"/>
+                            <constraint firstItem="08y-ml-pYe" firstAttribute="top" secondItem="VSJ-pM-ZFq" secondAttribute="bottom" constant="30.5" id="cZb-em-0dP"/>
+                            <constraint firstItem="VZq-Da-WsH" firstAttribute="centerX" secondItem="ud5-Rf-P9G" secondAttribute="centerX" id="p7F-Xc-yDv"/>
+                            <constraint firstItem="VSJ-pM-ZFq" firstAttribute="top" secondItem="VZq-Da-WsH" secondAttribute="bottom" constant="68" id="sv4-iz-Bn5"/>
+                            <constraint firstItem="08y-ml-pYe" firstAttribute="leading" secondItem="AGu-Hy-U7l" secondAttribute="leading" constant="32" id="t4L-aP-4Z9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AGu-Hy-U7l"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="VSJ-pM-ZFq" id="ajS-cc-fUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGy-UD-geW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,14 +9,16 @@
 import UIKit
 
 class AfterLoginScreen: UIViewController {
-
+var name = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+nameLabel.text = name
         // Do any additional setup after loading the view.
     }
+    var usercredential = UserCredentialController.init(isLogin: true)
+    @IBOutlet weak var nameLabel: UILabel!
     
-
+    
     /*
     // MARK: - Navigation
 

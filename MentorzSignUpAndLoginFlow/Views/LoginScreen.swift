@@ -71,6 +71,8 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
                 LinkedinManager.init().fetchProfile(handler: { (error) -> (Void) in
                     if let err = error {
                         SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
+                    }else {
+                        
                     }
                 })
             }
@@ -85,6 +87,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
             if (statusCode==200){
                 print("The Status Code is \(statusCode)")
                 let vc = UIStoryboard.init(name: "LoginStoryBoard", bundle: Bundle.main).instantiateViewController(withIdentifier: "AfterLoginScreen") as! AfterLoginScreen
+                vc.name = /newuser?.name
                 self.navigationController?.pushViewController(vc, animated: true)
             } else if(statusCode==400){
                 SVProgressHUD.showError(withStatus: "Bad Request")
