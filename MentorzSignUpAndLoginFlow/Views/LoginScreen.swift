@@ -12,10 +12,10 @@ import SVProgressHUD
 
 class LoginScreen: UIViewController,CountryCodeDelegate {
     func didSelectCountryCode(country: Country) {
-        self.code.setTitle("+" + /country.code, for: .normal)
+        self.code.setTitle(/country.code, for: .normal)
         let phone = /usercredentials.phonenumber
         phone.cc  = country.code
-        phone.isoAlpha2Cc = ""
+        phone.isoAlpha2Cc = country.iso
         self.usercredentials.phonenumber = phone
     }
     
