@@ -20,7 +20,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
     }
     
     
-    
+    var linkedinManager = LinkedinManager()
     
     private var usercredentials : UserCredentialController  = UserCredentialController.init(isLogin: true)
     @IBOutlet weak var phoneField: UITextField!
@@ -57,6 +57,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
         FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in
             if let fbuser = userprofile {
                 print(fbuser.id)
+                
             }else{
                 SVProgressHUD.showError(withStatus: "\(/error?.localizedDescription)")
             }
@@ -64,20 +65,22 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
     }
     
     @IBAction func linkedinLoginPressed(_ sender: MentorzButton) {
-        LinkedinManager.init().loginLinkedin { (error) -> (Void) in
-            if let err = error {
-                SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
-            } else {
-                LinkedinManager.init().fetchProfile(handler: { (error) -> (Void) in
-                    if let err = error {
-                        SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
-                    }else {
-                        
-                    }
-                })
-            }
-        }
-
+//        LinkedinManager.init().loginLinkedin { (error) -> (Void) in
+//            if let err = error {
+//                SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
+//            } else {
+//                LinkedinManager.init().fetchProfile(handler: { (error,dict) -> (Void) in
+//                    if let err = error {
+//                        SVProgressHUD.showError(withStatus: "\(err.localizedDescription)")
+//                    }else {
+//                        //Looking to handle success response , but i can't understand its type
+//                       // let newuser = dict.
+//                    }
+//                })
+//            }
+  //      }
+        linkedinManager.LinkedinLogin()
+        
     }
     
     @IBAction func loginButtonPressed(_ sender: MentorzButton) {
