@@ -62,6 +62,14 @@ class UserCredentialController: NSObject {
             request.phoneNumber = newValue
         }
     }
+    var socialId: String?{
+        get{
+            return request.socialId
+        }
+        set{
+            request.socialId = /newValue
+        }
+    }
     
     func sendOTP(handler: @escaping ( (Error?)->() ) ){
         firebaseManager.verifyPhone(phoneNumber: /self.phonenumber) { (error) -> (Void) in

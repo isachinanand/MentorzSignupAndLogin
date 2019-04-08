@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/FBManager.swift"
-            timestampString = "576331293.7529629"
+            timestampString = "576394475.982064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
-            timestampString = "576331293.754916"
+            timestampString = "576394475.982569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -42,7 +42,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
-                  timestampString = "576162563.4721121"
+                  timestampString = "576394476.296325"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -57,7 +57,7 @@
                   moduleName = "MentorzSignUpAndLoginFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentorzSignUpAndLoginFlow/MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
-                  timestampString = "576162563.476845"
+                  timestampString = "576394476.30124"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -74,12 +74,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzSignUpAndLoginFlow/Views/OTPScreen.swift"
-            timestampString = "576331293.755402"
+            timestampString = "576394475.9830509"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "verifyButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/LinkedinManager.swift"
+            timestampString = "576394475.983151"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "LinkedinLogin(handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/LinkedinManager.swift"
+            timestampString = "576394475.9841959"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "fetchProfile(handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MentorzSignUpAndLoginFlow/LinkedinManager.swift"
+            timestampString = "576394475.984591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchProfile(handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

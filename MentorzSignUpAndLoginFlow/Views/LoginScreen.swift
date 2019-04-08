@@ -57,6 +57,9 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
         FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in
             if let fbuser = userprofile {
                 print(fbuser.id)
+                self.usercredentials.socialId = fbuser.id
+                
+                
                 
             }else{
                 SVProgressHUD.showError(withStatus: "\(/error?.localizedDescription)")
@@ -79,7 +82,13 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
 //                })
 //            }
   //      }
-        linkedinManager.LinkedinLogin()
+        linkedinManager.LinkedinLogin { (error,LIProfile)  -> (Void) in
+            if let err = error {
+            SVProgressHUD.showError(withStatus: err.localizedDescription)
+            }else{
+                print("done")
+            }
+        }
         
     }
     
@@ -100,6 +109,8 @@ class LoginScreen: UIViewController,CountryCodeDelegate {
                 SVProgressHUD.showError(withStatus: "Forbidden")
             }else if(statusCode==404){
                 SVProgressHUD.showError(withStatus: "Not Found")
+            }else if(statusCode==500){
+                SVProgressHUD.showError(withStatus: "Internal Server Error")
             }
             
         }
@@ -123,3 +134,6 @@ extension LoginScreen:UITextFieldDelegate{
     }
 }
 
+extension LoginScreen{
+    
+}
